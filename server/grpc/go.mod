@@ -3,8 +3,8 @@ module github.com/go-micro/microwire-plugins/server/grpc/v5
 go 1.17
 
 require (
-	github.com/go-micro/microwire-plugins/client/grpc/v5 v5.0.0
-	github.com/go-micro/microwire-plugins/transport/grpc/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/client/grpc/v5 v5.0.2
+	github.com/go-micro/microwire-plugins/transport/grpc/v5 v5.0.2
 	github.com/golang/protobuf v1.5.2
 	go-micro.dev/v4 v4.8.0
 	golang.org/x/net v0.0.0-20211020060615-d418f374d309
@@ -52,9 +52,4 @@ require (
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
-)
-
-replace (
-	github.com/go-micro/microwire-plugins/client/grpc => ../../client/grpc/v5
-	github.com/go-micro/microwire-plugins/transport/grpc => ../../transport/grpc/v5
 )
