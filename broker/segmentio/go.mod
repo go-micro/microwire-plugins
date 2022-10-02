@@ -3,8 +3,8 @@ module github.com/go-micro/microwire-plugins/broker/segmentio/v5
 go 1.17
 
 require (
-	github.com/go-micro/microwire-plugins/broker/kafka/v5 v5.0.2
-	github.com/go-micro/microwire-plugins/codec/segmentio/v5 v5.0.2
+	github.com/go-micro/microwire-plugins/broker/kafka/v5 v5.0.3
+	github.com/go-micro/microwire-plugins/codec/segmentio/v5 v5.0.3
 	github.com/google/uuid v1.2.0
 	github.com/segmentio/kafka-go v0.4.31
 	go-micro.dev/v4 v4.8.0
