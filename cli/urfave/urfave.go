@@ -1,6 +1,8 @@
 package urfave
 
 import (
+	"os"
+
 	mCli "github.com/go-micro/microwire/v5/cli"
 	"github.com/go-micro/microwire/v5/errors"
 	"github.com/urfave/cli/v2"
@@ -94,6 +96,10 @@ func (c *FlagCLI) Parse(args []string, opts ...mCli.Option) error {
 		return err
 	}
 	c.ctx = ctx
+
+	if c.ctx == nil {
+		os.Exit(0)
+	}
 
 	return nil
 }
