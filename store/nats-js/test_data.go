@@ -1,6 +1,6 @@
 package natsjs
 
-import "go-micro.dev/v4/store"
+import "github.com/go-micro/microwire/v5/store"
 
 type test struct {
 	Record   *store.Record

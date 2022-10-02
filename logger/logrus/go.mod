@@ -1,13 +1,13 @@
-module github.com/go-micro/plugins/v4/logger/logrus
+module github.com/go-micro/microwire-plugins/logger/logrus/v5
 
-go 1.17
+go 1.18
 
 require (
-	github.com/sirupsen/logrus v1.8.1
-	go-micro.dev/v4 v4.8.0
+	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/sirupsen/logrus v1.9.0
 )
 
 require (
-	github.com/google/uuid v1.2.0 // indirect
-	golang.org/x/sys v0.0.0-20210502180810-71e4cd670f79 // indirect
+	github.com/google/uuid v1.3.0 // indirect
+	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
 )

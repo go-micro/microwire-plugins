@@ -2,7 +2,7 @@ package stomp
 
 import (
 	"github.com/go-stomp/stomp/v3"
-	"go-micro.dev/v4/broker"
+	"github.com/go-micro/microwire/v5/broker"
 )
 
 type publication struct {

@@ -13,17 +13,17 @@ import (
 	"sync"
 	"time"
 
-	proto "github.com/go-micro/plugins/v4/broker/grpc/proto"
+	proto "github.com/go-micro/microwire-plugins/broker/grpc/v5/proto"
 	"github.com/google/uuid"
-	"go-micro.dev/v4/broker"
-	merr "go-micro.dev/v4/errors"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/registry/cache"
-	maddr "go-micro.dev/v4/util/addr"
-	"go-micro.dev/v4/util/cmd"
-	mnet "go-micro.dev/v4/util/net"
-	mls "go-micro.dev/v4/util/tls"
+	"github.com/go-micro/microwire/v5/broker"
+	merr "github.com/go-micro/microwire/v5/errors"
+	log "github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/registry/cache"
+	maddr "github.com/go-micro/microwire/v5/util/addr"
+	"github.com/go-micro/microwire/v5/util/cmd"
+	mnet "github.com/go-micro/microwire/v5/util/net"
+	mls "github.com/go-micro/microwire/v5/util/tls"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )
@@ -62,7 +62,7 @@ type grpcEvent struct {
 }
 
 var (
-	registryKey = "go-micro.dev/v4/registry"
+	registryKey = "github.com/go-micro/microwire/v5/registry"
 
 	broadcastVersion = "ff.grpc.broadcast"
 	registerTTL      = time.Minute

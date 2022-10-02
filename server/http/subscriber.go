@@ -9,11 +9,11 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/codec"
-	"go-micro.dev/v4/metadata"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/codec"
+	"github.com/go-micro/microwire/v5/metadata"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 const (

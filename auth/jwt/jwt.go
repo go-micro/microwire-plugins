@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	jwtToken "github.com/go-micro/plugins/v4/auth/jwt/token"
-	"go-micro.dev/v4/auth"
-	"go-micro.dev/v4/util/cmd"
+	jwtToken "github.com/go-micro/microwire-plugins/auth/jwt/v5/token"
+	"github.com/go-micro/microwire/v5/auth"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 func init() {

@@ -3,7 +3,7 @@ package token
 import (
 	"time"
 
-	"go-micro.dev/v4/store"
+	"github.com/go-micro/microwire/v5/store"
 )
 
 type Options struct {

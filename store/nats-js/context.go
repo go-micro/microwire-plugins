@@ -3,7 +3,7 @@ package natsjs
 import (
 	"context"
 
-	"go-micro.dev/v4/store"
+	"github.com/go-micro/microwire/v5/store"
 )
 
 // setStoreOption returns a function to setup a context with given value

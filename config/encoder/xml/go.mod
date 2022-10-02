@@ -1,5 +1,5 @@
-module github.com/go-micro/plugins/v4/config/encoder/xml
+module github.com/go-micro/microwire-plugins/config/encoder/xml/v5
 
-go 1.17
+go 1.18
 
-require go-micro.dev/v4 v4.8.0
+require github.com/go-micro/microwire/v5 v5.0.0

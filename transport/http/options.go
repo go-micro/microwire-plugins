@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"go-micro.dev/v4/transport"
+	"github.com/go-micro/microwire/v5/transport"
 )
 
 // Handle registers the handler for the given pattern.

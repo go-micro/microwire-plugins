@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"go-micro.dev/v4/metadata"
+	"github.com/go-micro/microwire/v5/metadata"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/baggage"
 	"go.opentelemetry.io/otel/propagation"
@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	instrumentationName = "github.com/go-micro/plugins/v4/wrapper/trace/opentelemetry"
+	instrumentationName = "github.com/go-micro/microwire-plugins/wrapper/trace/v5/opentelemetry"
 )
 
 // StartSpanFromContext returns a new span with the given operation name and options. If a span

@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-zookeeper/zk"
 	hash "github.com/mitchellh/hashstructure"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/util/cmd"
+	log "github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 var (

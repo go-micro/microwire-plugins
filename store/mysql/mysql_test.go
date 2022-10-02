@@ -7,7 +7,7 @@ import (
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
-	"go-micro.dev/v4/store"
+	"github.com/go-micro/microwire/v5/store"
 )
 
 var (

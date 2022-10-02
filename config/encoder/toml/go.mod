@@ -1,8 +1,8 @@
-module github.com/go-micro/plugins/v4/config/encoder/toml
+module github.com/go-micro/microwire-plugins/config/encoder/toml/v5
 
-go 1.17
+go 1.18
 
 require (
-	github.com/BurntSushi/toml v0.3.1
-	go-micro.dev/v4 v4.8.0
+	github.com/BurntSushi/toml v1.2.0
+	github.com/go-micro/microwire/v5 v5.0.0
 )

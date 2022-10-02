@@ -3,7 +3,7 @@ package xml
 import (
 	"encoding/xml"
 
-	"go-micro.dev/v4/config/encoder"
+	"github.com/go-micro/microwire/v5/config/encoder"
 )
 
 type xmlEncoder struct{}

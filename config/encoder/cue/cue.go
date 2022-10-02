@@ -3,7 +3,7 @@ package cue
 import (
 	"cuelang.org/go/cue"
 	"github.com/ghodss/yaml"
-	"go-micro.dev/v4/config/encoder"
+	"github.com/go-micro/microwire/v5/config/encoder"
 )
 
 type cueEncoder struct{}

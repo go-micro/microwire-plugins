@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/store"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/store"
+	"github.com/go-micro/microwire/v5/util/cmd"
 	bolt "go.etcd.io/bbolt"
 )
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"go-micro.dev/v4/auth"
+	"github.com/go-micro/microwire/v5/auth"
 )
 
 func TestGenerate(t *testing.T) {

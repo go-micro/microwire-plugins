@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/logger"
-	maddr "go-micro.dev/v4/util/addr"
-	"go-micro.dev/v4/util/cmd"
-	mnet "go-micro.dev/v4/util/net"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/logger"
+	maddr "github.com/go-micro/microwire/v5/util/addr"
+	"github.com/go-micro/microwire/v5/util/cmd"
+	mnet "github.com/go-micro/microwire/v5/util/net"
 )
 
 func init() {

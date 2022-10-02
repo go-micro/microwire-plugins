@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/consul/api/watch"
 	hclog "github.com/hashicorp/go-hclog"
-	"go-micro.dev/v4/sync"
+	"github.com/go-micro/microwire/v5/sync"
 )
 
 type consulSync struct {

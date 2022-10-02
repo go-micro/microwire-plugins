@@ -4,7 +4,7 @@ import (
 	"io"
 
 	"github.com/go-micro/go-bson"
-	"go-micro.dev/v4/codec"
+	"github.com/go-micro/microwire/v5/codec"
 )
 
 type clientCodec struct {

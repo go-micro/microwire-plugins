@@ -9,8 +9,8 @@ import (
 
 	"github.com/patrickmn/go-cache"
 	"github.com/pkg/errors"
-	"go-micro.dev/v4/store"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/store"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 // NewStore returns a memory store

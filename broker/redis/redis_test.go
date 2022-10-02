@@ -7,7 +7,7 @@ import (
 	"sort"
 	"testing"
 
-	"go-micro.dev/v4/broker"
+	"github.com/go-micro/microwire/v5/broker"
 )
 
 func subscribe(t *testing.T, b broker.Broker, topic string, handle broker.Handler) broker.Subscriber {

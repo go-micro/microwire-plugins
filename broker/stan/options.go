@@ -5,8 +5,8 @@ import (
 	"time"
 
 	stan "github.com/nats-io/stan.go"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 type optionsKey struct{}

@@ -3,7 +3,7 @@ package opencensus
 import (
 	"fmt"
 
-	microerr "go-micro.dev/v4/errors"
+	microerr "github.com/go-micro/microwire/v5/errors"
 
 	"go.opencensus.io/trace"
 

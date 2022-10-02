@@ -2,7 +2,7 @@ package http
 
 import (
 	"go-micro.dev/v4"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 // WithBackend provides an option to set the http backend url

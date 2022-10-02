@@ -12,8 +12,8 @@ import (
 
 	"github.com/hudl/fargo"
 	"github.com/op/go-logging"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type fargoConnection interface {

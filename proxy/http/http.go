@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"go-micro.dev/v4"
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/errors"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 // Router will proxy rpc requests as http POST requests. It is a server.Router

@@ -14,7 +14,7 @@ import (
 	nserver "github.com/nats-io/nats-server/v2/server"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
-	"go-micro.dev/v4/store"
+	"github.com/go-micro/microwire/v5/store"
 )
 
 func testSetup(ctx context.Context, t *testing.T, opts ...store.Option) store.Store {

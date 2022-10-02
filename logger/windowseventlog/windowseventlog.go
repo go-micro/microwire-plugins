@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"go-micro.dev/v4/logger"
+	"github.com/go-micro/microwire/v5/logger"
 	"golang.org/x/sys/windows/svc/eventlog"
 )
 

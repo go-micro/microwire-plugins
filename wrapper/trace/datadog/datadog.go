@@ -2,12 +2,12 @@
 package datadog
 
 import (
-	"go-micro.dev/v4/registry"
+	"github.com/go-micro/microwire/v5/registry"
 
 	"context"
 
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 var noDebugStack = true

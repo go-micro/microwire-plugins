@@ -6,7 +6,7 @@ import (
 	"io"
 	"net/http"
 
-	log "go-micro.dev/v4/logger"
+	log "github.com/go-micro/microwire/v5/logger"
 )
 
 // Errors ...

@@ -8,13 +8,13 @@ import (
 	"context"
 
 	"github.com/juju/ratelimit"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/server"
-	"go-micro.dev/v4/transport"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/errors"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
+	"github.com/go-micro/microwire/v5/server"
+	"github.com/go-micro/microwire/v5/transport"
 )
 
 type testHandler struct{}

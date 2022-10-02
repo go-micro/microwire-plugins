@@ -11,8 +11,8 @@ import (
 	stan "github.com/nats-io/stan.go"
 	"github.com/pkg/errors"
 
-	"go-micro.dev/v4/events"
-	"go-micro.dev/v4/logger"
+	"github.com/go-micro/microwire/v5/events"
+	"github.com/go-micro/microwire/v5/logger"
 )
 
 const (

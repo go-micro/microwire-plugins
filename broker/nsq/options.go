@@ -5,7 +5,7 @@ import (
 	"time"
 
 	nsq "github.com/nsqio/go-nsq"
-	"go-micro.dev/v4/broker"
+	"github.com/go-micro/microwire/v5/broker"
 )
 
 type concurrentHandlerKey struct{}

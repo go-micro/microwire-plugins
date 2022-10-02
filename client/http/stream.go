@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"sync"
 
-	"go-micro.dev/v4/client"
+	"github.com/go-micro/microwire/v5/client"
 )
 
 // Implements the streamer interface

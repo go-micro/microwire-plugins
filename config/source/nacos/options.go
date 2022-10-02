@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
-	"go-micro.dev/v4/config/source"
+	"github.com/go-micro/microwire/v5/config/source"
 )
 
 type addressKey struct{}

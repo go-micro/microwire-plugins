@@ -15,16 +15,16 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/codec"
-	raw "go-micro.dev/v4/codec/bytes"
-	errors "go-micro.dev/v4/errors"
-	"go-micro.dev/v4/metadata"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/transport"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/codec"
+	raw "github.com/go-micro/microwire/v5/codec/bytes"
+	errors "github.com/go-micro/microwire/v5/errors"
+	"github.com/go-micro/microwire/v5/metadata"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
+	"github.com/go-micro/microwire/v5/transport"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type httpClient struct {

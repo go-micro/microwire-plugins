@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/hashicorp/vault/api"
-	"go-micro.dev/v4/config/source"
+	"github.com/go-micro/microwire/v5/config/source"
 )
 
 type watcher struct {

@@ -1,10 +1,10 @@
-module github.com/go-micro/plugins/v4/config/encoder/yaml
+module github.com/go-micro/microwire-plugins/config/encoder/yaml/v5
 
-go 1.17
+go 1.18
 
 require (
 	github.com/ghodss/yaml v1.0.0
-	go-micro.dev/v4 v4.8.0
+	github.com/go-micro/microwire/v5 v5.0.0
 )
 
 require (

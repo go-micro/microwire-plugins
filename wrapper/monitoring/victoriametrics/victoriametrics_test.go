@@ -11,10 +11,10 @@ import (
 
 	metrics "github.com/VictoriaMetrics/metrics"
 	"github.com/stretchr/testify/assert"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 type Test interface {

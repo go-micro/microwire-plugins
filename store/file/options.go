@@ -3,7 +3,7 @@ package file
 import (
 	"context"
 
-	"go-micro.dev/v4/store"
+	"github.com/go-micro/microwire/v5/store"
 )
 
 type dirOptionKey struct{}

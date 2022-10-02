@@ -5,8 +5,8 @@ import (
 
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
-	"go-micro.dev/v4/config/encoder"
-	"go-micro.dev/v4/config/source"
+	"github.com/go-micro/microwire/v5/config/encoder"
+	"github.com/go-micro/microwire/v5/config/source"
 )
 
 type watcher struct {

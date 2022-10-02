@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"go-micro.dev/v4/transport"
+	"github.com/go-micro/microwire/v5/transport"
 )
 
 func TestMemoryTransport(t *testing.T) {

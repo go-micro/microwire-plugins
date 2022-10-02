@@ -2,8 +2,8 @@
 package mdns
 
 import (
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 func init() {

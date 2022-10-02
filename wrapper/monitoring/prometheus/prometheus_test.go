@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
-	promwrapper "github.com/go-micro/plugins/v4/wrapper/monitoring/prometheus"
+	promwrapper "github.com/go-micro/microwire-plugins/wrapper/monitoring/v5/prometheus"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/stretchr/testify/assert"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 type Test interface {

@@ -6,11 +6,11 @@ import (
 	"encoding/gob"
 	"time"
 
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/util/cmd"
 
 	quic "github.com/lucas-clemente/quic-go"
-	"go-micro.dev/v4/transport"
-	utls "go-micro.dev/v4/util/tls"
+	"github.com/go-micro/microwire/v5/transport"
+	utls "github.com/go-micro/microwire/v5/util/tls"
 )
 
 type quicSocket struct {

@@ -1,13 +1,13 @@
-module github.com/go-micro/plugins/v4/logger/zerolog
+module github.com/go-micro/microwire-plugins/logger/zerolog/v5
 
-go 1.17
+go 1.18
 
 require (
+	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/rs/zerolog v1.23.0
-	go-micro.dev/v4 v4.8.0
 )
 
 require (
-	github.com/google/uuid v1.2.0 // indirect
+	github.com/google/uuid v1.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 )

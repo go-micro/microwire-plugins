@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/streadway/amqp"
-	"go-micro.dev/v4/logger"
+	"github.com/go-micro/microwire/v5/logger"
 )
 
 var (

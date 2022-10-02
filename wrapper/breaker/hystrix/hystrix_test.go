@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/afex/hystrix-go/hystrix"
-	"go-micro.dev/v4/client"
-	merrors "go-micro.dev/v4/errors"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
+	"github.com/go-micro/microwire/v5/client"
+	merrors "github.com/go-micro/microwire/v5/errors"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
 )
 
 func TestBreaker(t *testing.T) {

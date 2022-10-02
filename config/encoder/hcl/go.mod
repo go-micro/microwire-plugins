@@ -1,8 +1,8 @@
-module github.com/go-micro/plugins/v4/config/encoder/hcl
+module github.com/go-micro/microwire-plugins/config/encoder/hcl/v5
 
-go 1.17
+go 1.18
 
 require (
+	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/hashicorp/hcl v1.0.0
-	go-micro.dev/v4 v4.8.0
 )

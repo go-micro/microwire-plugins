@@ -6,9 +6,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	sarama "github.com/go-micro/plugins/v4/broker/kafka"
-	segjson "github.com/go-micro/plugins/v4/codec/segmentio"
-	"go-micro.dev/v4/broker"
+	sarama "github.com/go-micro/microwire-plugins/broker/kafka/v5"
+	segjson "github.com/go-micro/microwire-plugins/codec/segmentio/v5"
+	"github.com/go-micro/microwire/v5/broker"
 )
 
 func BenchmarkSaramaCodecJsonPublish(b *testing.B) {

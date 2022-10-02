@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
+	log "github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/registry"
 )
 
 type multiRegistry struct {

@@ -9,9 +9,9 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/nsqio/go-nsq"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/codec/json"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/codec/json"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type nsqBroker struct {

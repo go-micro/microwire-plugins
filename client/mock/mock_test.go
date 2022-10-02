@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"go-micro.dev/v4/errors"
+	"github.com/go-micro/microwire/v5/errors"
 )
 
 func TestClient(t *testing.T) {

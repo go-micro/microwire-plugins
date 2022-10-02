@@ -11,8 +11,8 @@ import (
 
 import (
 	context "context"
-	client "go-micro.dev/v4/client"
-	server "go-micro.dev/v4/server"
+	client "github.com/go-micro/microwire/v5/client"
+	server "github.com/go-micro/microwire/v5/server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

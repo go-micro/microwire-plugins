@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/juju/ratelimit"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/errors"
+	"github.com/go-micro/microwire/v5/server"
 
 	"context"
 )

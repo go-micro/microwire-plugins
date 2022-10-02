@@ -3,7 +3,7 @@
 
 package windowseventlog
 
-import "go-micro.dev/v4/logger"
+import "github.com/go-micro/microwire/v5/logger"
 
 type src struct{}
 type eid struct{}

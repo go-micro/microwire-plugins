@@ -7,9 +7,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/go-micro/plugins/v4/registry/kubernetes/client/api"
-	"github.com/go-micro/plugins/v4/registry/kubernetes/client/watch"
-	"go-micro.dev/v4/logger"
+	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5/client/api"
+	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5/client/watch"
+	"github.com/go-micro/microwire/v5/logger"
 )
 
 var (

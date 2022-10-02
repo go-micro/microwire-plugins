@@ -3,10 +3,10 @@ package shard_test
 import (
 	"testing"
 
-	"github.com/go-micro/plugins/v4/selector/shard"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
+	"github.com/go-micro/microwire-plugins/selector/shard/v5"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
 )
 
 func TestShard(t *testing.T) {

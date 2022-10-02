@@ -3,8 +3,8 @@ package kafka
 import (
 	"context"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 // setSubscribeOption returns a function to setup a context with given value

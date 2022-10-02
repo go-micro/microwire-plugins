@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/streadway/amqp"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type rbroker struct {

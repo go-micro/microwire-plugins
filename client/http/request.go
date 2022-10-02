@@ -1,8 +1,8 @@
 package http
 
 import (
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/codec"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/codec"
 )
 
 type httpRequest struct {

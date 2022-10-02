@@ -8,7 +8,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/hashicorp/memberlist"
-	"go-micro.dev/v4/registry"
+	"github.com/go-micro/microwire/v5/registry"
 )
 
 func newMemberlistConfig() *memberlist.Config {

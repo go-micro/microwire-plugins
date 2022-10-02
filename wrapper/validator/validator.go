@@ -3,8 +3,8 @@ package validator
 import (
 	"context"
 
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/errors"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 type Validator interface {

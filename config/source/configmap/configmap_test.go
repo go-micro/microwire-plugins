@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"go-micro.dev/v4/config"
+	"github.com/go-micro/microwire/v5/config"
 )
 
 func TestGetClient(t *testing.T) {

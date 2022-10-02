@@ -3,7 +3,7 @@ package label
 import (
 	"context"
 
-	"go-micro.dev/v4/selector"
+	"github.com/go-micro/microwire/v5/selector"
 )
 
 type labelKey struct{}

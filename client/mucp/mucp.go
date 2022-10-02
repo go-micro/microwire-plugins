@@ -2,8 +2,8 @@
 package mucp
 
 import (
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 func init() {

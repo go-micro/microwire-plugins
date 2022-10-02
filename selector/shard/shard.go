@@ -4,9 +4,9 @@ import (
 	"strings"
 
 	"github.com/minio/highwayhash"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/selector"
 )
 
 // zeroKey is the base key for all hashes, it is 32 zeros.

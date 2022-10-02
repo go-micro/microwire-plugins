@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/nats-io/nats.go"
-	"go-micro.dev/v4/transport"
+	"github.com/go-micro/microwire/v5/transport"
 )
 
 type optionsKey struct{}

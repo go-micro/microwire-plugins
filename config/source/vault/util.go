@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"go-micro.dev/v4/config/source"
+	"github.com/go-micro/microwire/v5/config/source"
 )
 
 func makeMap(kv map[string]interface{}, secretName string) (map[string]interface{}, error) {

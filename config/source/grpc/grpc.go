@@ -4,8 +4,8 @@ import (
 	"context"
 	"crypto/tls"
 
-	proto "github.com/go-micro/plugins/v4/config/source/grpc/proto"
-	"go-micro.dev/v4/config/source"
+	proto "github.com/go-micro/microwire-plugins/config/source/grpc/v5/proto"
+	"github.com/go-micro/microwire/v5/config/source"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )

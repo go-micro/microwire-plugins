@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/server"
+	"github.com/go-micro/microwire/v5/client"
+	"github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/server"
 )
 
 var (

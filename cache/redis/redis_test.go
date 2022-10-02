@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"go-micro.dev/v4/cache"
+	"github.com/go-micro/microwire/v5/cache"
 )
 
 var (

@@ -7,8 +7,8 @@ import (
 
 	"github.com/go-log/log"
 	"github.com/nats-io/nats.go"
-	"go-micro.dev/v4/server"
-	"go-micro.dev/v4/transport"
+	"github.com/go-micro/microwire/v5/server"
+	"github.com/go-micro/microwire/v5/transport"
 )
 
 var addrTestCases = []struct {

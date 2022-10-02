@@ -1,0 +1,21 @@
+version: "3"
+
+tasks:
+  check:
+    cmds:
+      - trunk check -a
+  pre-commit:
+    cmds:
+      - trunk check --ci
+  tidy:
+    cmds:
+      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go mod tidy -go=1.18; popd' '_' '{}' \+
+  update:
+    cmds:
+      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go get -u ./...; popd' '_' '{}' \+
+  gosums:
+    cmds:
+      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; git add go.mod go.sum; popd' '_' '{}' \+
+  workuse:
+    cmds:
+      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'go work use `dirname $1`' '_' '{}' \+

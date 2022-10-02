@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/codec"
-	"go-micro.dev/v4/codec/jsonrpc"
-	"go-micro.dev/v4/codec/protorpc"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/server"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/broker"
+	"github.com/go-micro/microwire/v5/codec"
+	"github.com/go-micro/microwire/v5/codec/jsonrpc"
+	"github.com/go-micro/microwire/v5/codec/protorpc"
+	log "github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/registry"
+	"github.com/go-micro/microwire/v5/server"
+	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 
 	"cloud.google.com/go/pubsub"
 	"github.com/google/uuid"
-	"go-micro.dev/v4/broker"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/util/cmd"
+	"github.com/go-micro/microwire/v5/broker"
+	log "github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/util/cmd"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
