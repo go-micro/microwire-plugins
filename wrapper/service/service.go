@@ -2,7 +2,7 @@
 package service
 
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire/v5/client"
 	"github.com/go-micro/microwire/v5/server"
 

@@ -20,7 +20,7 @@ Alternatively use directly
 
 ```go
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire-plugins/broker/mqtt/v5"
 )
 

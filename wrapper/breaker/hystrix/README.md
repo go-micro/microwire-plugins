@@ -6,7 +6,7 @@ A go-micro plugin for go-hystrix.
 package main
 
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	hystrix "github.com/go-micro/microwire-plugins/wrapper/breaker/v5/hystrix"
 )
 
@@ -24,7 +24,7 @@ func main() {
 package main
 
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	hystrix "github.com/go-micro/microwire-plugins/wrapper/breaker/v5/hystrix"
 )
 
@@ -63,7 +63,7 @@ var (
 package main
 
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	hystrix "github.com/go-micro/microwire-plugins/wrapper/breaker/v5/hystrix"
 )
 

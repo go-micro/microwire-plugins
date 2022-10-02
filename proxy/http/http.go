@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire/v5/errors"
 	"github.com/go-micro/microwire/v5/server"
 )

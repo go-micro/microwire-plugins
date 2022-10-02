@@ -13,7 +13,7 @@ Specify the server to your micro service
 
 ```go
 import (
-        "go-micro.dev/v4"
+        "github.com/go-micro/microwire/v5"
         "github.com/go-micro/microwire-plugins/server/grpc/v5"
 )
 

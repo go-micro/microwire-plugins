@@ -58,7 +58,7 @@ Create your service and ensure you call `service.Init`
 package main
 
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 )
 
 func main() {
@@ -103,7 +103,7 @@ Import and set as options when creating a new service
 
 ```go
 import (
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5"
 )
 

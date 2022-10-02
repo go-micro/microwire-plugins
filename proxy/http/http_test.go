@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"go-micro.dev/v4"
+	"github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire/v5/client"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/server"
