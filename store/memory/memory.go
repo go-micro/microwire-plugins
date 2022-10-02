@@ -7,10 +7,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/go-micro/microwire/v5/store"
 	"github.com/patrickmn/go-cache"
 	"github.com/pkg/errors"
-	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 // NewStore returns a memory store

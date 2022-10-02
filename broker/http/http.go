@@ -16,14 +16,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec/json"
 	merr "github.com/go-micro/microwire/v5/errors"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/registry/cache"
 	maddr "github.com/go-micro/microwire/v5/util/addr"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/google/uuid"
+
 	mnet "github.com/go-micro/microwire/v5/util/net"
 	mls "github.com/go-micro/microwire/v5/util/tls"
 	"golang.org/x/net/http2"

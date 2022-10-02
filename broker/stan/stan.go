@@ -9,12 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/uuid"
-	stan "github.com/nats-io/stan.go"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec/json"
 	log "github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/google/uuid"
+	stan "github.com/nats-io/stan.go"
 )
 
 type stanBroker struct {

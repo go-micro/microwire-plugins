@@ -7,11 +7,10 @@ import (
 	"sync"
 
 	"github.com/Shopify/sarama"
-	"github.com/google/uuid"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec/json"
 	log "github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/google/uuid"
 )
 
 type kBroker struct {

@@ -9,10 +9,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/go-micro/microwire/v5/store"
 	"github.com/nats-io/nats.go"
 	"github.com/pkg/errors"
-	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 var (

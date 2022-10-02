@@ -14,10 +14,10 @@ import (
 	"sync"
 	"time"
 
-	hash "github.com/mitchellh/hashstructure"
 	"github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	hash "github.com/mitchellh/hashstructure"
+
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"go.uber.org/zap"

@@ -14,13 +14,13 @@ import (
 	"time"
 
 	pb "github.com/go-micro/microwire-plugins/registry/gossip/v5/proto"
+	log "github.com/go-micro/microwire/v5/logger"
+	"github.com/go-micro/microwire/v5/registry"
 	"github.com/golang/protobuf/proto"
 	"github.com/google/uuid"
 	"github.com/hashicorp/memberlist"
 	"github.com/mitchellh/hashstructure"
-	log "github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
+
 	regutil "github.com/go-micro/microwire/v5/util/registry"
 )
 

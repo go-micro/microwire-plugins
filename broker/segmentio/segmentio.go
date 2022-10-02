@@ -7,12 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/uuid"
-	kafka "github.com/segmentio/kafka-go"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec/json"
 	"github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/google/uuid"
+	kafka "github.com/segmentio/kafka-go"
 )
 
 type kBroker struct {

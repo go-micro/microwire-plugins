@@ -12,7 +12,6 @@ import (
 	mc "github.com/bradfitz/gomemcache/memcache"
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type mkv struct {

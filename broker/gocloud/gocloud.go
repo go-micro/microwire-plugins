@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/streadway/amqp"
 	"github.com/go-micro/microwire/v5/broker"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/streadway/amqp"
+
 	"gocloud.dev/gcp"
 	"gocloud.dev/pubsub"
 	"gocloud.dev/pubsub/gcppubsub"

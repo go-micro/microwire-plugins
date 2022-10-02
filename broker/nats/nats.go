@@ -7,12 +7,11 @@ import (
 	"strings"
 	"sync"
 
-	nats "github.com/nats-io/nats.go"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec/json"
 	"github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	nats "github.com/nats-io/nats.go"
 )
 
 func init() {

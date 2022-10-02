@@ -7,9 +7,8 @@ import (
 	"net"
 	"path/filepath"
 
-	"github.com/hashicorp/consul/api"
 	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/hashicorp/consul/api"
 )
 
 type ckv struct {

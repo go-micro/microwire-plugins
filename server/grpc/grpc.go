@@ -14,7 +14,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/golang/protobuf/proto"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/errors"
 	"github.com/go-micro/microwire/v5/logger"
@@ -23,7 +22,8 @@ import (
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/util/addr"
 	"github.com/go-micro/microwire/v5/util/backoff"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/golang/protobuf/proto"
+
 	mgrpc "github.com/go-micro/microwire/v5/util/grpc"
 	mnet "github.com/go-micro/microwire/v5/util/net"
 	"golang.org/x/net/netutil"

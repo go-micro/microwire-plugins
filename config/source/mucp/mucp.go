@@ -6,7 +6,7 @@ import (
 	proto "github.com/go-micro/microwire-plugins/config/source/mucp/v5/proto"
 	"github.com/go-micro/microwire/v5/config/source"
 	log "github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"go-micro.dev/v4/util/cmd"
 )
 
 var (

@@ -6,7 +6,6 @@ import (
 
 	jwtToken "github.com/go-micro/microwire-plugins/auth/jwt/v5/token"
 	"github.com/go-micro/microwire/v5/auth"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 func init() {

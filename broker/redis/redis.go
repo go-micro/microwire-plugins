@@ -7,11 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gomodule/redigo/redis"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec"
 	"github.com/go-micro/microwire/v5/codec/json"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/gomodule/redigo/redis"
 )
 
 func init() {

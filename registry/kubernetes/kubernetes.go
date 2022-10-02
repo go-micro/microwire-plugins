@@ -12,7 +12,6 @@ import (
 
 	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5/client"
 	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type kregistry struct {

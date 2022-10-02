@@ -6,10 +6,9 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/pkg/errors"
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/pkg/errors"
 )
 
 var (

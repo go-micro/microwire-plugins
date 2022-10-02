@@ -4,9 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/go-micro/microwire/v5/cache"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/go-redis/redis/v8"
 )
 
 func init() {

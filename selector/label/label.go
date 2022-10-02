@@ -7,7 +7,6 @@ import (
 
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/selector"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 /*

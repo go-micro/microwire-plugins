@@ -11,7 +11,6 @@ import (
 	"net/url"
 
 	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type proxy struct {

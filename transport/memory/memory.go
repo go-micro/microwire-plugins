@@ -12,7 +12,7 @@ import (
 
 	"github.com/go-micro/microwire/v5/transport"
 	maddr "github.com/go-micro/microwire/v5/util/addr"
-	"github.com/go-micro/microwire/v5/util/cmd"
+
 	mnet "github.com/go-micro/microwire/v5/util/net"
 )
 

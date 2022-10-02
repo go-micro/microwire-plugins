@@ -7,11 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/uuid"
-	"github.com/nsqio/go-nsq"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec/json"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/google/uuid"
+	"github.com/nsqio/go-nsq"
 )
 
 type nsqBroker struct {

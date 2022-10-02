@@ -14,14 +14,14 @@ import (
 	"time"
 
 	proto "github.com/go-micro/microwire-plugins/broker/grpc/v5/proto"
-	"github.com/google/uuid"
 	"github.com/go-micro/microwire/v5/broker"
 	merr "github.com/go-micro/microwire/v5/errors"
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/registry/cache"
 	maddr "github.com/go-micro/microwire/v5/util/addr"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/google/uuid"
+
 	mnet "github.com/go-micro/microwire/v5/util/net"
 	mls "github.com/go-micro/microwire/v5/util/tls"
 	"google.golang.org/grpc"

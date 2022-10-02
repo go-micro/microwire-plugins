@@ -18,7 +18,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/sts"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type sessClientKey struct{}

@@ -10,10 +10,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/go-micro/microwire/v5/registry"
 	"github.com/hudl/fargo"
 	"github.com/op/go-logging"
-	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type fargoConnection interface {

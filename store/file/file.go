@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
+
 	bolt "go.etcd.io/bbolt"
 )
 

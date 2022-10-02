@@ -9,11 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nats-io/nats.go"
 	"github.com/go-micro/microwire/v5/codec/json"
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/transport"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/nats-io/nats.go"
 )
 
 type ntport struct {

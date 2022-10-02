@@ -9,10 +9,9 @@ import (
 
 	"errors"
 
+	"github.com/go-micro/microwire/v5/transport"
 	"github.com/google/uuid"
 	"github.com/streadway/amqp"
-	"github.com/go-micro/microwire/v5/transport"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 const (

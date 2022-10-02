@@ -3,7 +3,6 @@ package mucp
 
 import (
 	"github.com/go-micro/microwire/v5/client"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 func init() {

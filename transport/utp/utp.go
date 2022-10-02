@@ -8,7 +8,6 @@ import (
 	"time"
 
 	"github.com/go-micro/microwire/v5/transport"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 type utpTransport struct {

@@ -18,7 +18,7 @@ import (
 	"github.com/go-micro/microwire/v5/metadata"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/selector"
-	"github.com/go-micro/microwire/v5/util/cmd"
+
 	pnet "github.com/go-micro/microwire/v5/util/net"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

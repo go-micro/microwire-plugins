@@ -13,7 +13,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/sqs"
 	"github.com/go-micro/microwire/v5/broker"
 	log "github.com/go-micro/microwire/v5/logger"
-	"github.com/go-micro/microwire/v5/util/cmd"
 )
 
 const (

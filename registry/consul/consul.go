@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/go-micro/microwire/v5/registry"
 	consul "github.com/hashicorp/consul/api"
 	hash "github.com/mitchellh/hashstructure"
-	"github.com/go-micro/microwire/v5/registry"
-	"github.com/go-micro/microwire/v5/util/cmd"
+
 	mnet "github.com/go-micro/microwire/v5/util/net"
 )
 

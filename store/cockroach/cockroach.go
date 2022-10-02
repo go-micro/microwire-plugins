@@ -10,11 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lib/pq"
-	"github.com/pkg/errors"
 	"github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/store"
-	"github.com/go-micro/microwire/v5/util/cmd"
+	"github.com/lib/pq"
+	"github.com/pkg/errors"
 )
 
 // DefaultDatabase is the namespace that the sql store

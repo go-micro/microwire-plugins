@@ -12,7 +12,7 @@ import (
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/transport"
 	maddr "github.com/go-micro/microwire/v5/util/addr"
-	"github.com/go-micro/microwire/v5/util/cmd"
+
 	mnet "github.com/go-micro/microwire/v5/util/net"
 	mls "github.com/go-micro/microwire/v5/util/tls"
 )
