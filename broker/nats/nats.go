@@ -16,7 +16,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultBrokers["nats"] = NewBroker
+	broker.Plugins.Add("nats", NewBroker)
 }
 
 type natsBroker struct {

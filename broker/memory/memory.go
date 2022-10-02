@@ -17,7 +17,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultBrokers["memory"] = NewBroker
+	broker.Plugins.Add("memory", NewBroker)
 }
 
 type memoryBroker struct {

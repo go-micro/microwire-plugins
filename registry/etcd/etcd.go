@@ -37,7 +37,7 @@ type etcdRegistry struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["etcd"] = NewRegistry
+	registry.Plugins.Add("etcd", NewRegistry)
 }
 
 func NewRegistry(opts ...registry.Option) registry.Registry {

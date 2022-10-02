@@ -63,7 +63,7 @@ var (
 )
 
 func init() {
-	cmd.DefaultTransports["nats"] = NewTransport
+	transport.Plugins.Add("nats", NewTransport)
 }
 
 func configure(n *ntport, opts ...transport.Option) {

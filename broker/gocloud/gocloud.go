@@ -21,7 +21,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultBrokers["gocloud"] = NewBroker
+	broker.Plugins.Add("gocloud", NewBroker)
 }
 
 type (

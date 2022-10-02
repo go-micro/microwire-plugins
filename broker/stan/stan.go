@@ -47,7 +47,7 @@ type publication struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["stan"] = NewBroker
+	broker.Plugins.Add("stan", NewBroker)
 }
 
 func (n *publication) Topic() string {

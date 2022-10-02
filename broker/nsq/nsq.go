@@ -52,7 +52,7 @@ var (
 
 func init() {
 	rand.Seed(time.Now().UnixNano())
-	cmd.DefaultBrokers["nsq"] = NewBroker
+	broker.Plugins.Add("nsq", NewBroker)
 }
 
 func (n *nsqBroker) Init(opts ...broker.Option) error {

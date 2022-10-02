@@ -15,7 +15,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultBrokers["redis"] = NewBroker
+	broker.Plugins.Add("redis", NewBroker)
 }
 
 // publication is an internal publication for the Redis broker.

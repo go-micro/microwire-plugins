@@ -44,7 +44,7 @@ type tcpTransportListener struct {
 }
 
 func init() {
-	cmd.DefaultTransports["tcp"] = NewTransport
+	transport.Plugins.Add("tcp", NewTransport)
 }
 
 func (t *tcpTransportClient) Local() string {

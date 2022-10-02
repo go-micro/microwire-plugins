@@ -72,7 +72,7 @@ var (
 func init() {
 	rand.Seed(time.Now().Unix())
 
-	cmd.DefaultBrokers["grpc"] = NewBroker
+	broker.Plugins.Add("grpc", NewBroker)
 }
 
 func newConfig(config *tls.Config) *tls.Config {

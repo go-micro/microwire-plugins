@@ -38,7 +38,7 @@ type publication struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["googlepubsub"] = NewBroker
+	broker.Plugins.Add("googlepubsub", NewBroker)
 }
 
 func (s *subscriber) run(hdlr broker.Handler) {

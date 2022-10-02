@@ -37,7 +37,7 @@ type consulRegistry struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["consul"] = NewRegistry
+	registry.Plugins.Add("consul", NewRegistry)
 }
 
 func getDeregisterTTL(t time.Duration) time.Duration {

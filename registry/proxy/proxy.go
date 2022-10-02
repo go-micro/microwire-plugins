@@ -19,7 +19,7 @@ type proxy struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["proxy"] = NewRegistry
+	registry.Plugins.Add("proxy", NewRegistry)
 }
 
 func configure(s *proxy, opts ...registry.Option) error {

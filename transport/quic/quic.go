@@ -37,7 +37,7 @@ type quicListener struct {
 }
 
 func init() {
-	cmd.DefaultTransports["quic"] = NewTransport
+	transport.Plugins.Add("quic", NewTransport)
 }
 
 func (q *quicClient) Close() error {

@@ -22,7 +22,7 @@ type nacosRegistry struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["nacos"] = NewRegistry
+	registry.Plugins.Add("nacos", NewRegistry)
 }
 
 // NewRegistry NewRegistry

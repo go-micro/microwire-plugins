@@ -60,7 +60,7 @@ type sqsEvent struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["snssqs"] = NewBroker
+	broker.Plugins.Add("snssqs", NewBroker)
 }
 
 // run is designed to run as a goroutine and poll SQS for new messages. Note that it's possible to receive

@@ -16,7 +16,7 @@ type sidecar struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["sidecar"] = NewBroker
+	broker.Plugins.Add("sidecar", NewBroker)
 }
 
 func newBroker(opts ...broker.Option) broker.Broker {

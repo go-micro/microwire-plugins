@@ -22,7 +22,7 @@ type rbroker struct {
 
 // init registers the STOMP broker
 func init() {
-	cmd.DefaultBrokers["stomp"] = NewBroker
+	broker.Plugins.Add("stomp", NewBroker)
 }
 
 // stompHeaderToMap converts STOMP header to broker friendly header

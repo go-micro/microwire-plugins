@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultRegistries["mdns"] = NewRegistry
+	registry.Plugins.Add("mdns", NewRegistry)
 }
 
 // NewRegistry returns a new mdns registry

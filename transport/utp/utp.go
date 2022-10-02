@@ -39,7 +39,7 @@ type utpSocket struct {
 }
 
 func init() {
-	cmd.DefaultTransports["utp"] = NewTransport
+	transport.Plugins.Add("utp", NewTransport)
 }
 
 func NewTransport(opts ...transport.Option) transport.Transport {

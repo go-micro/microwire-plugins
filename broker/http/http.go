@@ -30,7 +30,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultBrokers["http"] = NewBroker
+	broker.Plugins.Add("http", NewBroker)
 }
 
 // HTTP Broker is a point to point async broker

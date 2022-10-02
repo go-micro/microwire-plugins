@@ -48,7 +48,7 @@ type publication struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["sqs"] = NewBroker
+	broker.Plugins.Add("sqs", NewBroker)
 }
 
 // run is designed to run as a goroutine and poll SQS for new messages. Note that it's possible to receive

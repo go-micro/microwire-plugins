@@ -35,7 +35,7 @@ type mqttBroker struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["mqtt"] = NewBroker
+	broker.Plugins.Add("mqtt", NewBroker)
 	rand.Seed(time.Now().UnixNano())
 }
 

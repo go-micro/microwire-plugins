@@ -32,7 +32,7 @@ type eurekaRegistry struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["eureka"] = NewRegistry
+	registry.Plugins.Add("eureka", NewRegistry)
 	logging.SetLevel(logging.ERROR, "fargo")
 }
 

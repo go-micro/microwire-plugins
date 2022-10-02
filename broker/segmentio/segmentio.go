@@ -56,7 +56,7 @@ type publication struct {
 }
 
 func init() {
-	cmd.DefaultBrokers["kafka"] = NewBroker
+	broker.Plugins.Add("kafka", NewBroker)
 }
 
 func (p *publication) Topic() string {

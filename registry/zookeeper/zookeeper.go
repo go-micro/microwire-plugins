@@ -25,7 +25,7 @@ type zookeeperRegistry struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["zookeeper"] = NewRegistry
+	registry.Plugins.Add("zookeeper", NewRegistry)
 }
 
 func configure(z *zookeeperRegistry, opts ...registry.Option) error {

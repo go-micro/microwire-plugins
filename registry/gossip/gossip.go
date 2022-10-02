@@ -82,7 +82,7 @@ type eventDelegate struct {
 }
 
 func init() {
-	cmd.DefaultRegistries["gossip"] = NewRegistry
+	registry.Plugins.Add("gossip", NewRegistry)
 }
 
 func (ed *eventDelegate) NotifyJoin(n *memberlist.Node) {

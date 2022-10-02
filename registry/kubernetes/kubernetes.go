@@ -47,7 +47,7 @@ var podSelector = map[string]string{
 }
 
 func init() {
-	cmd.DefaultRegistries["kubernetes"] = NewRegistry
+	registry.Plugins.Add("kubernetes", NewRegistry)
 }
 
 func configure(k *kregistry, opts ...registry.Option) error {

@@ -32,7 +32,7 @@ var (
 )
 
 func init() {
-	cmd.DefaultRegistries["nats"] = NewRegistry
+	registry.Plugins.Add("nats", NewRegistry)
 }
 
 func configure(n *natsRegistry, opts ...registry.Option) error {

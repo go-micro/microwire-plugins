@@ -55,7 +55,7 @@ type memoryTransport struct {
 }
 
 func init() {
-	cmd.DefaultTransports["memory"] = NewTransport
+	transport.Plugins.Add("memory", NewTransport)
 }
 
 func (ms *memorySocket) Recv(m *transport.Message) error {

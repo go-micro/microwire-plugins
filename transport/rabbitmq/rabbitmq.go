@@ -68,7 +68,7 @@ var (
 )
 
 func init() {
-	cmd.DefaultTransports["rabbitmq"] = NewTransport
+	transport.Plugins.Add("rabbitmq", NewTransport)
 }
 
 func (r *rmqtportClient) Local() string {
