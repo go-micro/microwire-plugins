@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/google/uuid v1.3.0
-	github.com/nats-io/stan.go v0.9.0
+	github.com/nats-io/stan.go v0.10.3
 )
 
 require (
@@ -35,7 +35,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/nats-io/nats-server/v2 v2.3.0 // indirect
 	github.com/nats-io/nats-streaming-server v0.22.0 // indirect
-	github.com/nats-io/nats.go v1.11.0 // indirect
+	github.com/nats-io/nats.go v1.17.0 // indirect
 	github.com/nats-io/nkeys v0.3.0 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect

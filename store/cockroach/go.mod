@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/kr/pretty v0.2.1
-	github.com/lib/pq v1.10.2
+	github.com/lib/pq v1.10.7
 	github.com/pkg/errors v0.9.1
 )
 

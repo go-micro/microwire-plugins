@@ -7,7 +7,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.3.0
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b
-	google.golang.org/grpc v1.41.0
+	google.golang.org/grpc v1.49.0
 )
 
 require (
@@ -46,7 +46,7 @@ require (
 	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.12 // indirect
-	google.golang.org/genproto v0.0.0-20211021150943-2b146023228c // indirect
+	google.golang.org/genproto v0.0.0-20220930163606-c98284e70a91 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect

@@ -56,7 +56,7 @@ require (
 require (
 	github.com/google/uuid v1.3.0
 	github.com/miekg/dns v1.1.50 // indirect
-	github.com/nats-io/nats.go v1.16.0
+	github.com/nats-io/nats.go v1.17.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.7.1
 	golang.org/x/crypto v0.0.0-20220926161630-eccd6366d1be // indirect

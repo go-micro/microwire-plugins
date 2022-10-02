@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
-	github.com/sony/gobreaker v0.4.1
+	github.com/sony/gobreaker v0.5.0
 )
 
 require (

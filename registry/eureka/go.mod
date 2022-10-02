@@ -4,9 +4,9 @@ go 1.18
 
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
-	github.com/hudl/fargo v1.3.0
+	github.com/hudl/fargo v1.4.0
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
-	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
+	golang.org/x/oauth2 v0.0.0-20220909003341-f21342109be1
 )
 
 require (
@@ -16,6 +16,8 @@ require (
 	github.com/bitly/go-simplejson v0.5.0 // indirect
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
+	github.com/cenkalti/backoff/v4 v4.1.3 // indirect
+	github.com/clbanning/mxj v1.8.4 // indirect
 	github.com/clbanning/x2j v0.0.0-20191024224557-825249438eec // indirect
 	github.com/cloudflare/circl v1.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
@@ -27,7 +29,7 @@ require (
 	github.com/go-git/go-billy/v5 v5.3.1 // indirect
 	github.com/go-git/go-git/v5 v5.4.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/google/go-cmp v0.5.6 // indirect
+	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
@@ -36,7 +38,7 @@ require (
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect
-	github.com/onsi/gomega v1.4.3 // indirect
+	github.com/onsi/gomega v1.13.0 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -54,7 +56,7 @@ require (
 	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.12 // indirect
-	google.golang.org/appengine v1.6.5 // indirect
+	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/gcfg.v1 v1.2.3 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect

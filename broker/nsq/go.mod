@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/google/uuid v1.3.0
-	github.com/nsqio/go-nsq v1.0.8
+	github.com/nsqio/go-nsq v1.1.0
 )
 
 require (
@@ -22,7 +22,7 @@ require (
 	github.com/go-git/go-billy/v5 v5.3.1 // indirect
 	github.com/go-git/go-git/v5 v5.4.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/golang/snappy v0.0.1 // indirect
+	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect

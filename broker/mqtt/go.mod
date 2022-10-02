@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/broker/mqtt/v5
 go 1.18
 
 require (
-	github.com/eclipse/paho.mqtt.golang v1.3.5
+	github.com/eclipse/paho.mqtt.golang v1.4.1
 	github.com/go-micro/microwire/v5 v5.0.0
 )
 

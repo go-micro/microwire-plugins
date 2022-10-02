@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/golang/protobuf v1.5.2
-	google.golang.org/grpc v1.38.0
+	google.golang.org/grpc v1.49.0
 )
 
 require (
@@ -53,7 +53,7 @@ require (
 	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.12 // indirect
-	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
+	google.golang.org/genproto v0.0.0-20220930163606-c98284e70a91 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect

@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
-	github.com/gomodule/redigo v1.8.5
+	github.com/gomodule/redigo v1.8.9
 )
 
 require (

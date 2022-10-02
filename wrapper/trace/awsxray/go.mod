@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/asim/go-awsxray v0.0.0-20161209120537-0d8a60b6e205
-	github.com/aws/aws-sdk-go v1.38.69
+	github.com/aws/aws-sdk-go v1.44.109
 	github.com/go-micro/microwire/v5 v5.0.0
 )
 

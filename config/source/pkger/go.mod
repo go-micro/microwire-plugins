@@ -7,4 +7,4 @@ require (
 	github.com/markbates/pkger v0.17.1
 )
 
-require github.com/gobuffalo/here v0.6.0 // indirect
+require github.com/gobuffalo/here v0.6.7 // indirect

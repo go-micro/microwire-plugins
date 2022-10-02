@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/broker/snssqs/v5
 go 1.18
 
 require (
-	github.com/aws/aws-sdk-go v1.38.69
+	github.com/aws/aws-sdk-go v1.44.109
 	github.com/go-micro/microwire/v5 v5.0.0
 	golang.org/x/text v0.3.7
 )

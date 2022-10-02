@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-log/log v0.2.0
 	github.com/go-micro/microwire/v5 v5.0.0
-	github.com/nats-io/nats.go v1.16.0
+	github.com/nats-io/nats.go v1.17.0
 )
 
 require (
