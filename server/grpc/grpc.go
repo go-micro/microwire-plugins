@@ -38,7 +38,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultServers["grpc"] = NewServer
+	server.Plugins.Add("grpc", NewServer)
 }
 
 var (

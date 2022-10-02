@@ -38,7 +38,7 @@ type natsStore struct {
 }
 
 func init() {
-	cmd.DefaultStores["natsjs"] = NewStore
+	store.Plugins.Add("natsjs", NewStore)
 }
 
 // NewStore will create a new NATS JetStream Object Store

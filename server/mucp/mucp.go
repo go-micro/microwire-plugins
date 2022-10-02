@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultServers["mucp"] = NewServer
+	server.Plugins.Add("mucp", NewServer)
 }
 
 // NewServer returns a micro server interface

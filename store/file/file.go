@@ -29,7 +29,7 @@ var (
 )
 
 func init() {
-	cmd.DefaultStores["file"] = NewStore
+	store.Plugins.Add("file", NewStore)
 }
 
 // NewStore returns a memory store

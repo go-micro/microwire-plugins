@@ -24,7 +24,7 @@ type staticSelector struct {
 }
 
 func init() {
-	cmd.DefaultSelectors["static"] = NewSelector
+	selector.Plugins.Add("static", NewSelector)
 }
 
 func (s *staticSelector) Init(opts ...selector.Option) error {

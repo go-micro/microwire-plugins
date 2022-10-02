@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultAuths["jwt"] = NewAuth
+	auth.Plugins.Add("jwt", NewAuth)
 }
 
 // NewAuth returns a new instance of the Auth service

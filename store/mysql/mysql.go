@@ -31,7 +31,7 @@ type sqlStore struct {
 }
 
 func init() {
-	cmd.DefaultStores["mysql"] = NewStore
+	store.Plugins.Add("mysql", NewStore)
 }
 
 func (s *sqlStore) Init(opts ...store.Option) error {

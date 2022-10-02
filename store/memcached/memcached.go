@@ -22,7 +22,7 @@ type mkv struct {
 }
 
 func init() {
-	cmd.DefaultStores["memcached"] = NewStore
+	store.Plugins.Add("memcached", NewStore)
 }
 
 func (m *mkv) Init(opts ...store.Option) error {

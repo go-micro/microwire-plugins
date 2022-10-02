@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultCaches["redis"] = NewCache
+	cache.Plugins.Add("redis", NewCache)
 }
 
 // NewCache returns a new redis cache.

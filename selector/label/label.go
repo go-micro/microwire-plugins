@@ -23,7 +23,7 @@ type labelSelector struct {
 }
 
 func init() {
-	cmd.DefaultSelectors["label"] = NewSelector
+	selector.Plugins.Add("label", NewSelector)
 }
 
 func prioritise(nodes []*registry.Node, labels []label) []*registry.Node {

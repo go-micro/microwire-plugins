@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultSelectors["registry"] = NewSelector
+	selector.Plugins.Add("registry", NewSelector)
 }
 
 // NewSelector returns a new registry selector

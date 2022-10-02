@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	cmd.DefaultClients["mucp"] = NewClient
+	client.Plugins.Add("mucp", NewClient)
 }
 
 // NewClient returns a new micro client interface

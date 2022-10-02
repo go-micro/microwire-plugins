@@ -18,7 +18,7 @@ type ckv struct {
 }
 
 func init() {
-	cmd.DefaultStores["consul"] = NewStore
+	store.Plugins.Add("consul", NewStore)
 }
 
 func (c *ckv) Init(opts ...store.Option) error {

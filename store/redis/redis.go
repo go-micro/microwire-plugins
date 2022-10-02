@@ -17,7 +17,7 @@ type rkv struct {
 }
 
 func init() {
-	cmd.DefaultStores["redis"] = NewStore
+	store.Plugins.Add("redis", NewStore)
 }
 
 func (r *rkv) Init(opts ...store.Option) error {

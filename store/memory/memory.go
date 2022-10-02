@@ -42,7 +42,7 @@ type storeRecord struct {
 }
 
 func init() {
-	cmd.DefaultStores["memory"] = NewStore
+	store.Plugins.Add("memory", NewStore)
 }
 
 func (m *memoryStore) key(prefix, key string) string {

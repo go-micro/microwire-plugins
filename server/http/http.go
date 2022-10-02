@@ -43,7 +43,7 @@ type httpServer struct {
 }
 
 func init() {
-	cmd.DefaultServers["http"] = NewServer
+	server.Plugins.Add("http", NewServer)
 }
 
 func (h *httpServer) newCodec(contentType string) (codec.NewCodec, error) {

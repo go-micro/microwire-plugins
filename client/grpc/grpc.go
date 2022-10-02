@@ -33,7 +33,7 @@ type grpcClient struct {
 }
 
 func init() {
-	cmd.DefaultClients["grpc"] = NewClient
+	client.Plugins.Add("grpc", NewClient)
 
 	encoding.RegisterCodec(wrapCodec{jsonCodec{}})
 	encoding.RegisterCodec(wrapCodec{protoCodec{}})

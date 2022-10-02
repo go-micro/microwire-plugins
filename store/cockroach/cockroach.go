@@ -47,7 +47,7 @@ type sqlStore struct {
 }
 
 func init() {
-	cmd.DefaultStores["cockroach"] = NewStore
+	store.Plugins.Add("cockroach", NewStore)
 }
 
 func (s *sqlStore) getDB(database, table string) (string, string) {
