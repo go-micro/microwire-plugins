@@ -11,11 +11,15 @@ import (
 	quic "github.com/lucas-clemente/quic-go"
 )
 
+func init() {
+	_ = transport.Plugins.Add("quic", NewTransport)
+}
+
 type quicSocket struct {
-	s   quic.Session
-	st  quic.Stream
-	enc *gob.Encoder
-	dec *gob.Decoder
+	conn quic.Connection
+	st   quic.Stream
+	enc  *gob.Encoder
+	dec  *gob.Decoder
 }
 
 type quicTransport struct {
@@ -54,15 +58,15 @@ func (q *quicSocket) Send(m *transport.Message) error {
 }
 
 func (q *quicSocket) Close() error {
-	return q.s.CloseWithError(0, "EOF")
+	return q.conn.CloseWithError(0, "EOF")
 }
 
 func (q *quicSocket) Local() string {
-	return q.s.LocalAddr().String()
+	return q.conn.LocalAddr().String()
 }
 
 func (q *quicSocket) Remote() string {
-	return q.s.RemoteAddr().String()
+	return q.conn.RemoteAddr().String()
 }
 
 func (q *quicListener) Addr() string {
@@ -75,22 +79,22 @@ func (q *quicListener) Close() error {
 
 func (q *quicListener) Accept(fn func(transport.Socket)) error {
 	for {
-		s, err := q.l.Accept(context.TODO())
+		conn, err := q.l.Accept(context.TODO())
 		if err != nil {
 			return err
 		}
 
-		stream, err := s.AcceptStream(context.TODO())
+		stream, err := conn.AcceptStream(context.TODO())
 		if err != nil {
 			continue
 		}
 
 		go func() {
 			fn(&quicSocket{
-				s:   s,
-				st:  stream,
-				enc: gob.NewEncoder(stream),
-				dec: gob.NewDecoder(stream),
+				conn: conn,
+				st:   stream,
+				enc:  gob.NewEncoder(stream),
+				dec:  gob.NewDecoder(stream),
 			})
 		}()
 	}
@@ -113,22 +117,21 @@ func (q *quicTransport) Dial(addr string, opts ...transport.DialOption) (transpo
 		o(&options)
 	}
 
-	config := q.opts.TLSConfig
-	if config == nil {
-		config = &tls.Config{
+	tlsConfig := q.opts.TLSConfig
+	if tlsConfig == nil {
+		tlsConfig = &tls.Config{
 			InsecureSkipVerify: true,
 			NextProtos:         []string{"http/1.1"},
 		}
 	}
-	s, err := quic.DialAddr(addr, config, &quic.Config{
+	conn, err := quic.DialAddr(addr, tlsConfig, &quic.Config{
 		MaxIdleTimeout: time.Minute * 2,
-		KeepAlive:      true,
 	})
 	if err != nil {
 		return nil, err
 	}
 
-	st, err := s.OpenStreamSync(context.TODO())
+	st, err := conn.OpenStreamSync(context.TODO())
 	if err != nil {
 		return nil, err
 	}
@@ -138,10 +141,10 @@ func (q *quicTransport) Dial(addr string, opts ...transport.DialOption) (transpo
 
 	return &quicClient{
 		&quicSocket{
-			s:   s,
-			st:  st,
-			enc: enc,
-			dec: dec,
+			conn: conn,
+			st:   st,
+			enc:  enc,
+			dec:  dec,
 		},
 		q,
 		options,
@@ -166,7 +169,7 @@ func (q *quicTransport) Listen(addr string, opts ...transport.ListenOption) (tra
 		}
 	}
 
-	l, err := quic.ListenAddr(addr, config, &quic.Config{KeepAlive: true})
+	l, err := quic.ListenAddr(addr, config, nil)
 	if err != nil {
 		return nil, err
 	}
