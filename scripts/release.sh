@@ -48,10 +48,15 @@ function release() {
 
     local pkg="${1}"
     local last_tag=$(git tag --list --sort='-creatordate' "${pkg}/*"  | head -n1)
+    if [[ "${last_tag}" == "" ]]; then
+        echo -e "# No previous tag\n# Run:\ngh release create "${pkg}/v5.0.1" -n 'Initial release'"
+        exit 0
+    fi
 
+    echo "# last_tag: ${last_tag}"
     local changes=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*")
     if [[ "${#changes[@]}" == "1" ]]; then
-        echo <"# No changes detected"
+        echo "# No changes detected"
         exit 1
     fi
 
@@ -69,7 +74,7 @@ function release() {
         local new_tag=${tmp_new_tag:1}
     fi
 
-    echo -e "# Run:\ngh release "${pkg}/${new_tag}" --generate-notes"
+    echo -e "# Run:\ngh release create "${pkg}/${new_tag}" --generate-notes --notes-start-tag ${last_tag}"
 }
 
 release "${1}"
