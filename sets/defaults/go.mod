@@ -3,10 +3,16 @@ module github.com/go-micro/microwire-plugins/sets/defaults/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire-plugins/broker/http/v5 v5.0.13
-	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.13
-	github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.0.13
-	github.com/go-micro/microwire-plugins/transport/http/v5 v5.0.13
+	github.com/go-micro/microwire-plugins/broker/http/v5 v5.1.1
+	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.0
+	github.com/go-micro/microwire-plugins/codec/grpc/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/codec/json/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/codec/jsonrpc/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/codec/proto/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/codec/protorpc/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/codec/text/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.0
+	github.com/go-micro/microwire-plugins/transport/http/v5 v5.1.0
 )
 
 require (
