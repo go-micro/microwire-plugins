@@ -49,7 +49,7 @@ function release() {
     local pkg="${1}"
     local last_tag=$(git tag --list --sort='-creatordate' "${pkg}/*"  | head -n1)
     if [[ "${last_tag}" == "" ]]; then
-        echo -e "# No previous tag\n# Run:\ngh release create "${pkg}/v5.0.1" -n 'Initial release'"
+        echo -e "# No previous tag\n# Run:\ngh release create "${pkg}/v5.0.0" -n 'Initial release'"
         exit 0
     fi
 
