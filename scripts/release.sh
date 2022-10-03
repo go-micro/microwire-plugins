@@ -3,7 +3,7 @@
 ######################################################################################
 # $ release.sh broker/http                                                           #
 #                                                                                    #
-# Release plugins that have changed it requires to be in a git repo with a clean tag #
+# Release a plugin                                                                   #
 #                                                                                    #
 ######################################################################################
 
@@ -65,8 +65,8 @@ function release() {
     local v_version=${last_tag_split[-1]}
     local version=${v_version:1}
 
-    local feat_detected=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*" | grep -q "^feat" && echo "yes" || echo "no")
-    if [[ "x${feat_detected}" == "xyes" ]]; then
+    git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*" | grep -q "^feat"
+    if [[ "$?" == "0" ]]; then
         local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]::${#last_tag_split[@]}-1}")/v$(increment_minor_version ${version})"
         local new_tag=${tmp_new_tag:1}
     else
