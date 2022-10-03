@@ -19,6 +19,11 @@ tasks:
     desc: Run "go test ./..." in all packages
     cmds:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' '{}' \+
+  workuse:
+    desc: Add all plugins to go.work
+    cmds:
+      - go work init . || exit 0
+      - go work use $(find . -name 'go.mod' -printf "%h\n")
   release:
     desc: "Release a plugin, usage: task release -- broker/http"
     cmds:
