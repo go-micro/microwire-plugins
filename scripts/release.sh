@@ -60,7 +60,7 @@ function release() {
     local v_version=${last_tag_split[-1]}
     local version=${v_version:1}
 
-    local feat_detected=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}" | grep -q "^feat" && echo "yes" || echo "no")
+    local feat_detected=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*" | grep -q "^feat" && echo "yes" || echo "no")
     if [[ "x${feat_detected}" == "xyes" ]]; then
         local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]::${#last_tag_split[@]}-1}")/v$(increment_minor_version ${version})"
         local new_tag=${tmp_new_tag:1}
