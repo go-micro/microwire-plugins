@@ -1,15 +1,5 @@
 version: "3"
 
-vars:
-  GIT_TAG:
-    sh: git tag --points-at HEAD
-  GIT_COMMIT:
-    sh: git rev-parse --short HEAD
-  GIT_DIRTY:
-    sh: git status -s
-  VERSION:
-    sh: if test "{{.GIT_DIRTY}}" != ""; then echo "{{.GIT_COMMIT}}-dirty"; elif test "{{.GIT_TAG}}" != ""; then echo "{{.GIT_TAG}}"; else echo "{{.GIT_COMMIT}}"; fi
-
 tasks:
   check:
     cmds:
@@ -30,9 +20,8 @@ tasks:
     cmds:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' '{}' \+
   release:
-    desc: "Release plugins that have changed it requires to be in a git repo with a clean tag"
+    desc: "Release a plugin, usage: task release -- broker/http"
     cmds:
-      - ./scripts/release.sh
+      - ./scripts/release.sh {{.CLI_ARGS}}
     preconditions:
       - test -n "{{.CLI_ARGS}}"
-      - test "{{.GIT_TAG}}" = "{{.VERSION}}"
