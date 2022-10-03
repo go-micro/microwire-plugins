@@ -16,6 +16,8 @@ github.com/go-acme/lego/v4 v4.8.0 h1:XienkuT6ZKHe0DE/LXeGP4ZY+ft+7ZMlqtiJ7XJs2pI
 github.com/go-acme/lego/v4 v4.8.0/go.mod h1:MXCdgHuQh25bfi/tPpyOV/9k2p1JVu6oxXcylAwkouI=
 github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
 github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
+github.com/go-micro/microwire/v5 v5.0.2 h1:7BUdPBLis7TLAi7FoMuPg6pE6VoKlhR8Ca3ePqOa2+s=
+github.com/go-micro/microwire/v5 v5.0.2/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/gobwas/httphead v0.1.0 h1:exrUm0f4YX0L7EBwZHuCF4GDp8aJfVeBrlLQrs6NqWU=
 github.com/gobwas/httphead v0.1.0/go.mod h1:O/RXo79gxV8G+RqlR/otEwx4Q36zl9rqC5u12GKvMCM=
 github.com/gobwas/pool v0.2.1 h1:xfeeEhW7pwmX8nuLVlqbzVc7udMDrwetjEv+TZIz1og=

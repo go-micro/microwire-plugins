@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/wrapper/trace/datadog/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/stretchr/testify v1.7.1
 	google.golang.org/grpc v1.49.0
 	gopkg.in/DataDog/dd-trace-go.v1 v1.42.1

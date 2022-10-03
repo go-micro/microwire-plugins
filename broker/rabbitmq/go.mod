@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/broker/rabbitmq/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/google/uuid v1.3.0
 	github.com/streadway/amqp v1.0.0
 )

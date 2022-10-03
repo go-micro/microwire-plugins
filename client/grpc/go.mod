@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/client/grpc/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	google.golang.org/grpc v1.49.0
 	google.golang.org/grpc/examples v0.0.0-20211102180624-670c133e568e
 	google.golang.org/protobuf v1.28.1

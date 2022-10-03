@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/config/source/consul/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/hashicorp/consul/api v1.15.2
 )
 

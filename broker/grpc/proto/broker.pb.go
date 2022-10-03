@@ -158,11 +158,11 @@ var _Broker_serviceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "github.com/go-micro/microwire-plugins/broker/grpc/proto/broker.proto",/v5
+	Metadata: "github.com/go-micro/microwire-plugins/broker/grpc/proto/broker.proto",
 }
 
 func init() {
-	proto.RegisterFile("github.com/go-micro/microwire-plugins/broker/grpc/proto/broker.proto", fileDescriptor0)/v5
+	proto.RegisterFile("github.com/go-micro/microwire-plugins/broker/grpc/proto/broker.proto", fileDescriptor0)
 }
 
 var fileDescriptor0 = []byte{

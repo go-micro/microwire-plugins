@@ -25,3 +25,8 @@ tasks:
       - ./scripts/release.sh {{.CLI_ARGS}}
     preconditions:
       - test -n "{{.CLI_ARGS}}"
+  releaseall:
+    desc: "Release all packages, will only release changed packages"
+    cmds:
+      - find . -name 'go.mod' -printf "%h\n" | sort -u | cut -c 3- | xargs -I {} ./scripts/release.sh {} | bash
+      - git fetch

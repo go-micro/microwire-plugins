@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/registry/eureka/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/hudl/fargo v1.4.0
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
 	golang.org/x/oauth2 v0.0.0-20220909003341-f21342109be1

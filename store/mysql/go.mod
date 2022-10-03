@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/store/mysql/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/pkg/errors v0.9.1
 )

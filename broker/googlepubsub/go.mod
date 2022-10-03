@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	cloud.google.com/go/pubsub v1.25.1
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/google/uuid v1.3.0
 	google.golang.org/api v0.98.0
 	google.golang.org/grpc v1.49.0

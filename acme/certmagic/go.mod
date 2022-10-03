@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/caddyserver/certmagic v0.17.2
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 )
 
 require (

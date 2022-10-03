@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/logger/zap/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	go.uber.org/zap v1.23.0
 )
 

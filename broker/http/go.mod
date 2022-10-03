@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/broker/http/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/google/uuid v1.3.0
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b
 )

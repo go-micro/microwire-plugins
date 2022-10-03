@@ -2,7 +2,7 @@ module github.com/go-micro/microwire-plugins/proxy/http/v5
 
 go 1.18
 
-require github.com/go-micro/microwire/v5 v5.0.1
+require github.com/go-micro/microwire/v5 v5.0.2
 
 require (
 	github.com/BurntSushi/toml v1.2.0 // indirect

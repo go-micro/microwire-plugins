@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/config/source/nacos/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/nacos-group/nacos-sdk-go/v2 v2.1.0
 )
 

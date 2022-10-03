@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/store/redis/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/go-redis/redis/v8 v8.11.5
 )
 

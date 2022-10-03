@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/wrapper/monitoring/prometheus/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/prometheus/client_golang v1.13.0
 	github.com/prometheus/client_model v0.2.0
 	github.com/stretchr/testify v1.7.1
