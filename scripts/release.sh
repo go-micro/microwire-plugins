@@ -54,8 +54,8 @@ function release() {
     fi
 
     echo "# last_tag: ${last_tag}"
-    local changes=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*")
-    if [[ "${#changes[@]}" == "1" ]]; then
+    local changes="$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}")"
+    if [[ "${#changes}" == "0" ]]; then
         echo "# No changes detected"
         exit 1
     fi
