@@ -49,9 +49,9 @@ function release() {
     local pkg="${1}"
     local last_tag=$(git tag --list --sort='-creatordate' "${pkg}/*"  | head -n1)
 
-    local changes=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}")
+    local changes=$(git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*")
     if [[ "${#changes[@]}" == "1" ]]; then
-        echo -e "# No changes detected"
+        echo <"# No changes detected"
         exit 1
     fi
 
