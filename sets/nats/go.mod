@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/go-micro/microwire-plugins/broker/nats/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.13
+	github.com/go-micro/microwire-plugins/events/nats/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/registry/nats/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/transport/nats/v5 v5.0.13
 )
@@ -14,6 +15,7 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/go-micro/microwire/v5 v5.0.1 // indirect
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
@@ -22,7 +24,9 @@ require (
 	github.com/nats-io/nats.go v1.17.0 // indirect
 	github.com/nats-io/nkeys v0.3.0 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
+	github.com/nats-io/stan.go v0.10.3 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
+	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/urfave/cli/v2 v2.17.1 // indirect
