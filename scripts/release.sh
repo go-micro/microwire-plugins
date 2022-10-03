@@ -41,7 +41,7 @@ function release() {
     local last_tag=$(last_tags | head -n 2 | tail -n 1)
     local changed_pkgs=$(go_mods ${new_tag} ${last_tag} | sort -u)
     for pkg in ${changes}; do
-        hub release create -m "${pkg}/${new_tag}" "${pkg}/{$new_tag}"; 
+        gh release "${pkg}/${new_tag}" --generate-notes 
     done
 }
 
