@@ -26,12 +26,20 @@ tasks:
   gosums:
     cmds:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; git add go.mod go.sum; popd' '_' '{}' \+
+  test:
+    cmds:
+      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' '{}' \+
   workuse:
     cmds:
       - go work init . || exit 0
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'go work use `dirname $1`' '_' '{}' \+
-  releaseall:
+  release:
+    desc: "Release plugins that have changed, usage example: task release -- v5.0.13 v5.0.14"
     cmds:
-      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'dir=$(dirname $1); pkg=${dir:2}; hub release create -m "${pkg}/{{.GIT_TAG}}" "${pkg}/{{.GIT_TAG}}"' '_' '{}' \+
+      - |-
+        for pkg in $(./scripts/release_changed.sh {{.CLI_ARGS}}); 
+          do hub release create -m "${pkg}/{{.GIT_TAG}}" "${pkg}/{{.GIT_TAG}}"; 
+        done
     preconditions:
+      - test -n "{{.CLI_ARGS}}"
       - test "{{.GIT_TAG}}" = "{{.VERSION}}"
