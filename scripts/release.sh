@@ -1,5 +1,12 @@
 #!/bin/bash
 
+######################################################################################
+# $ release.sh                                                                       #
+#                                                                                    #
+# Release plugins that have changed it requires to be in a git repo with a clean tag #
+#                                                                                    #
+######################################################################################
+
 function go_mods() {
 	local OLD_SHA=$(git rev-list -n 1 ${1})
 	local NEW_SHA=$(git rev-list -n 1 ${2})
@@ -32,7 +39,7 @@ function last_tags() {
 function release() {
     local new_tag="$(git tag --points-at HEAD)"
     local last_tag=$(last_tags | head -n 2 | tail -n 1)
-    local changed_pkgs=$(go_mods ${new_tag} ${last_tag})
+    local changed_pkgs=$(go_mods ${new_tag} ${last_tag} | sort -u)
     for pkg in ${changes}; do
         hub release create -m "${pkg}/${new_tag}" "${pkg}/{$new_tag}"; 
     done

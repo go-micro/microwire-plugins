@@ -30,12 +30,9 @@ tasks:
     cmds:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' '{}' \+
   release:
-    desc: "Release plugins that have changed it requires to be in a git repo with a clean tag, usage example: task release -- v5.0.13 v5.0.14"
+    desc: "Release plugins that have changed it requires to be in a git repo with a clean tag"
     cmds:
-      - |-
-        for pkg in $(./scripts/find_changed.sh {{.CLI_ARGS}}); do 
-          hub release create -m "${pkg}/{{.GIT_TAG}}" "${pkg}/{{.GIT_TAG}}"; 
-        done
+      - ./scripts/release.sh
     preconditions:
       - test -n "{{.CLI_ARGS}}"
       - test "{{.GIT_TAG}}" = "{{.VERSION}}"
