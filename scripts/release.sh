@@ -25,7 +25,7 @@ function increment_patch_version ()
 }
 
 function release() {
-    if [[ ! -d "${1}" ]]; then
+    if [[ ! -f "${1}/go.mod" ]]; then
         echo "Unknown package '${1}' given."
         exit 1
     fi
