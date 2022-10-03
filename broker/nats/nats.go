@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/go-micro/microwire-plugins/codec/json/v5"
 	"github.com/go-micro/microwire/v5/broker"
-	"github.com/go-micro/microwire/v5/codec/json"
 	"github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/registry"
 	nats "github.com/nats-io/nats.go"

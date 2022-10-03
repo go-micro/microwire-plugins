@@ -10,7 +10,7 @@ import (
     "github.com/go-micro/microwire/v5"
     "github.com/micro/go-micro/client"
     "github.com/micro/go-micro/server"
-    "github.com/go-micro/microwire-plugins/codec/jsonrpc2/v5
+    "github.com/go-micro/microwire-plugins/codec/jsonrpc2/v5"
 )
 
 func main() {

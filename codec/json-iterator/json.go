@@ -5,9 +5,13 @@ import (
 	//	jsonstd "encoding/json"
 	"io"
 
-	jsoniter "github.com/json-iterator/go"
 	"github.com/go-micro/microwire/v5/codec"
+	jsoniter "github.com/json-iterator/go"
 )
+
+func init() {
+	_ = codec.Plugins.Add("json-iterator", NewCodec)
+}
 
 type Codec struct {
 	Conn io.ReadWriteCloser

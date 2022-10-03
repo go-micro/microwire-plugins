@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-micro/microwire/v5/codec/json"
+	"github.com/go-micro/microwire-plugins/codec/json/v5"
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/transport"
 	"github.com/nats-io/nats.go"

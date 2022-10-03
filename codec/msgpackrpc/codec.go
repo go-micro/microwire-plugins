@@ -5,9 +5,13 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/tinylib/msgp/msgp"
 	"github.com/go-micro/microwire/v5/codec"
+	"github.com/tinylib/msgp/msgp"
 )
+
+func init() {
+	_ = codec.Plugins.Add("msgpackrpc", NewCodec)
+}
 
 type msgpackCodec struct {
 	rwc  io.ReadWriteCloser

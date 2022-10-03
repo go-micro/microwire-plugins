@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/Shopify/sarama"
+	"github.com/go-micro/microwire-plugins/codec/json/v5"
 	"github.com/go-micro/microwire/v5/broker"
-	"github.com/go-micro/microwire/v5/codec/json"
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/google/uuid"
 )

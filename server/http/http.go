@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/go-micro/microwire-plugins/codec/jsonrpc/v5"
+	"github.com/go-micro/microwire-plugins/codec/protorpc/v5"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/codec"
-	"github.com/go-micro/microwire/v5/codec/jsonrpc"
-	"github.com/go-micro/microwire/v5/codec/protorpc"
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/server"

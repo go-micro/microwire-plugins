@@ -32,7 +32,7 @@ type httpClient struct {
 }
 
 func init() {
-	client.Plugins.Add("http", NewClient)
+	_ = client.Plugins.Add("http", NewClient)
 }
 
 func (h *httpClient) next(request client.Request, opts client.CallOptions) (selector.Next, error) {

@@ -5,10 +5,14 @@ import (
 	stdjson "encoding/json"
 	"io"
 
+	"github.com/go-micro/microwire/v5/codec"
 	"github.com/golang/protobuf/proto"
 	segjson "github.com/segmentio/encoding/json"
-	"github.com/go-micro/microwire/v5/codec"
 )
+
+func init() {
+	_ = codec.Plugins.Add("segmentio", NewCodec)
+}
 
 type Codec struct {
 	Conn       io.ReadWriteCloser

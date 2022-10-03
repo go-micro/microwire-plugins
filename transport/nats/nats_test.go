@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-log/log"
-	"github.com/nats-io/nats.go"
+	"github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/transport"
+	"github.com/nats-io/nats.go"
 )
 
 var addrTestCases = []struct {
@@ -101,7 +101,7 @@ func TestListenAddr(t *testing.T) {
 
 	natsURL := os.Getenv("NATS_URL")
 	if natsURL == "" {
-		log.Logf("NATS_URL is undefined - skipping tests")
+		logger.Info("NATS_URL is undefined - skipping tests")
 		return
 	}
 

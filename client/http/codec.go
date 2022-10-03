@@ -3,10 +3,10 @@ package http
 import (
 	"encoding/json"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/go-micro/microwire-plugins/codec/jsonrpc/v5"
+	"github.com/go-micro/microwire-plugins/codec/protorpc/v5"
 	"github.com/go-micro/microwire/v5/codec"
-	"github.com/go-micro/microwire/v5/codec/jsonrpc"
-	"github.com/go-micro/microwire/v5/codec/protorpc"
+	"github.com/golang/protobuf/proto"
 )
 
 type jsonCodec struct{}

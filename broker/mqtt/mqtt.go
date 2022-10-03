@@ -22,8 +22,8 @@ import (
 	"time"
 
 	mqtt "github.com/eclipse/paho.mqtt.golang"
+	"github.com/go-micro/microwire-plugins/codec/json/v5"
 	"github.com/go-micro/microwire/v5/broker"
-	"github.com/go-micro/microwire/v5/codec/json"
 	log "github.com/go-micro/microwire/v5/logger"
 )
 

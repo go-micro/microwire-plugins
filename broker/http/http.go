@@ -16,8 +16,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/go-micro/microwire-plugins/codec/json/v5"
 	"github.com/go-micro/microwire/v5/broker"
-	"github.com/go-micro/microwire/v5/codec/json"
 	merr "github.com/go-micro/microwire/v5/errors"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/registry/cache"
