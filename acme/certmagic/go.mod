@@ -1,10 +1,10 @@
-module github.com/go-micro/microwire-plugins/acme/certmagic/v5
+module github.com/go-micro/microwire-plugins/v5/acme/certmagic
 
 go 1.18
 
 require (
 	github.com/caddyserver/certmagic v0.17.2
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 )
 
 require (

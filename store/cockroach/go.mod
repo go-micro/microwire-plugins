@@ -1,10 +1,10 @@
-module github.com/go-micro/microwire-plugins/store/cockroach/v5
+module github.com/go-micro/microwire-plugins/v5/store/cockroach
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
-	github.com/kr/pretty v0.2.1
+	github.com/go-micro/microwire/v5 v5.0.1
+	github.com/kr/pretty v0.3.0
 	github.com/lib/pq v1.10.7
 	github.com/pkg/errors v0.9.1
 )

@@ -12,7 +12,7 @@ It complies with the [go-micro.Client](https://godoc.org/github.com/micro/go-mic
 ### Use directly
 
 ```go
-import "github.com/go-micro/microwire-plugins/client/http/v5"
+import "github.com/go-micro/microwire-plugins/v5/client/http"
 
 service := micro.NewService(
 	micro.Name("my.service"),
@@ -23,7 +23,7 @@ service := micro.NewService(
 ### Use with flags
 
 ```go
-import _ "github.com/go-micro/microwire-plugins/client/http/v5"
+import _ "github.com/go-micro/microwire-plugins/v5/client/http"
 ```
 
 ```shell

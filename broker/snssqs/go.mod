@@ -1,10 +1,10 @@
-module github.com/go-micro/microwire-plugins/broker/snssqs/v5
+module github.com/go-micro/microwire-plugins/v5/broker/snssqs
 
 go 1.18
 
 require (
 	github.com/aws/aws-sdk-go v1.44.109
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	golang.org/x/text v0.3.7
 )
 
@@ -18,7 +18,6 @@ require (
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect

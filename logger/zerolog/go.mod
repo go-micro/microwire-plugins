@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/logger/zerolog/v5
+module github.com/go-micro/microwire-plugins/v5/logger/zerolog
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/rs/zerolog v1.28.0
 )
 

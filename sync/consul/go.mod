@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/sync/consul/v5
+module github.com/go-micro/microwire-plugins/v5/sync/consul
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/hashicorp/consul/api v1.15.2
 	github.com/hashicorp/go-hclog v1.3.1
 )

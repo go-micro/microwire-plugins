@@ -1,8 +1,8 @@
-module github.com/go-micro/microwire-plugins/transport/http/v5
+module github.com/go-micro/microwire-plugins/v5/transport/http
 
 go 1.18
 
-require github.com/go-micro/microwire/v5 v5.0.0
+require github.com/go-micro/microwire/v5 v5.0.1
 
 require (
 	github.com/bitly/go-simplejson v0.5.0 // indirect

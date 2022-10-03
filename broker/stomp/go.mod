@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/broker/stomp/v5
+module github.com/go-micro/microwire-plugins/v5/broker/stomp
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/go-stomp/stomp/v3 v3.0.5
 )
 

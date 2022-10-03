@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/config/source/vault/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/hashicorp/vault/api v1.8.0
 )
 
@@ -36,7 +36,6 @@ require (
 	github.com/hashicorp/vault/sdk v0.6.0 // indirect
 	github.com/hashicorp/yamux v0.1.1 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.2.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect

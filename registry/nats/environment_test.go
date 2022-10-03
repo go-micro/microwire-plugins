@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/go-micro/microwire-plugins/registry/nats/v5"
+	"github.com/go-micro/microwire-plugins/v5/registry/nats"
 	log "github.com/go-micro/microwire/v5/logger"
 	"github.com/go-micro/microwire/v5/registry"
 )

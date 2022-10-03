@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/cli/urfave/v5
+module github.com/go-micro/microwire-plugins/v5/cli/urfave
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/urfave/cli/v2 v2.17.1
 )
 

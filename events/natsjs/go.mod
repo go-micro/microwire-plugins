@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/events/natsjs/v5
+module github.com/go-micro/microwire-plugins/v5/events/natsjs
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/google/uuid v1.3.0
 	github.com/nats-io/nats-server/v2 v2.7.4
 	github.com/nats-io/nats.go v1.17.0

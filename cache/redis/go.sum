@@ -3,8 +3,8 @@ github.com/cespare/xxhash/v2 v2.1.2/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XL
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f h1:lO4WD4F/rVNCu3HqELle0jiPLLBs70cWOduZpkS1E78=
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f/go.mod h1:cuUVRXasLTGF7a8hSLbxyZXjz+1KgoB3wDUb6vlszIc=
 github.com/fsnotify/fsnotify v1.5.4 h1:jRbGcIw6P2Meqdwuo0H1p6JVLbL5DHKAKlYndzMwVZI=
-github.com/go-micro/microwire/v5 v5.0.0 h1:UqtFMvjaYmsL8wXOYmpl2ocz/5O0dafF33Lv1P7EHOk=
-github.com/go-micro/microwire/v5 v5.0.0/go.mod h1:7epVJvlJl6jqn7bbJziAPtytAf9o7AqRJVs4X7dZoYI=
+github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
+github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/go-redis/redis/v8 v8.11.5 h1:AcZZR7igkdvfVmQTPnu9WE37LRrO/YrBH5zWyjDC0oI=
 github.com/go-redis/redis/v8 v8.11.5/go.mod h1:gREzHqY1hg6oD9ngVRbLStwAWKhA0FEgq8Jd4h5lpwo=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=

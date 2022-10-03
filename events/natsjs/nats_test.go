@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-micro/microwire-plugins/events/natsjs/v5"
+	"github.com/go-micro/microwire-plugins/v5/events/natsjs/v5"
+	"github.com/go-micro/microwire/v5/events"
 	nserver "github.com/nats-io/nats-server/v2/server"
 	"github.com/stretchr/testify/assert"
-	"github.com/go-micro/microwire/v5/events"
 )
 
 type Payload struct {

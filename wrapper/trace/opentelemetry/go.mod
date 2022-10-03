@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/wrapper/trace/opentelemetry/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	go.opentelemetry.io/otel v1.10.0
 	go.opentelemetry.io/otel/trace v1.10.0
 )

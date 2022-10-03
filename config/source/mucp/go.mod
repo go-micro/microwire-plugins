@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/config/source/mucp/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/golang/protobuf v1.5.2
 	go-micro.dev/v4 v4.9.0
 )
@@ -26,7 +26,6 @@ require (
 	github.com/imdario/mergo v0.3.13 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/kevinburke/ssh_config v1.2.0 // indirect
-	github.com/kr/pretty v0.3.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect

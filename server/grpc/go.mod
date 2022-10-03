@@ -1,10 +1,10 @@
-module github.com/go-micro/microwire-plugins/server/grpc/v5
+module github.com/go-micro/microwire-plugins/v5/server/grpc
 
 go 1.17
 
 require (
-	github.com/go-micro/microwire-plugins/client/grpc/v5 v5.0.3
-	github.com/go-micro/microwire-plugins/transport/grpc/v5 v5.0.3
+	github.com/go-micro/microwire-plugins/client/grpc/v5 v5.0.4
+	github.com/go-micro/microwire-plugins/transport/grpc/v5 v5.0.4
 	github.com/golang/protobuf v1.5.2
 	go-micro.dev/v4 v4.8.0
 	golang.org/x/net v0.0.0-20211020060615-d418f374d309

@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/store/nats-js/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/nats-io/nats-server/v2 v2.8.4
 )
 

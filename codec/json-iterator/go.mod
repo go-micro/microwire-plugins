@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/codec/json-iterator/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/golang/protobuf v1.5.2
 	github.com/json-iterator/go v1.1.12
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c

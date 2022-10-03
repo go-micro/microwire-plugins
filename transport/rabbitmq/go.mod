@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/transport/rabbitmq/v5
+module github.com/go-micro/microwire-plugins/v5/transport/rabbitmq
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/google/uuid v1.3.0
 	github.com/streadway/amqp v1.0.0
 )
@@ -14,7 +14,7 @@ require (
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.2.1 // indirect
+	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b // indirect
 	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect

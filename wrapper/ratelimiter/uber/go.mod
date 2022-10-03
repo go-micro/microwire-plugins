@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/wrapper/ratelimiter/uber/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	go.uber.org/ratelimit v0.2.0
 )
 

@@ -3,10 +3,10 @@ module github.com/go-micro/microwire-plugins/sets/v4compat
 go 1.18
 
 require (
-	github.com/go-micro/microwire-plugins/broker/http/v5 v5.0.0-20221002211327-da41522da140
-	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.0-20221002211327-da41522da140
-	github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.0.0-20221002211327-da41522da140
-	github.com/go-micro/microwire-plugins/transport/http/v5 v5.0.0-20221002211327-da41522da140
+	github.com/go-micro/microwire-plugins/broker/http/v5 v5.0.4-20221002211327-da41522da140
+	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.4-20221002211327-da41522da140
+	github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.0.4-20221002211327-da41522da140
+	github.com/go-micro/microwire-plugins/transport/http/v5 v5.0.4-20221002211327-da41522da140
 )
 
 require (

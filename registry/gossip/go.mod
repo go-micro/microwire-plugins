@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/registry/gossip/v5
+module github.com/go-micro/microwire-plugins/v5/registry/gossip
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/memberlist v0.4.0

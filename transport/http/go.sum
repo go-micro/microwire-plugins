@@ -7,6 +7,8 @@ github.com/fsnotify/fsnotify v1.5.4 h1:jRbGcIw6P2Meqdwuo0H1p6JVLbL5DHKAKlYndzMwV
 github.com/fsnotify/fsnotify v1.5.4/go.mod h1:OVB6XrOHzAwXMpEM7uPOzcehqUV2UqJxmVXmkdnm1bU=
 github.com/go-micro/microwire/v5 v5.0.0 h1:UqtFMvjaYmsL8wXOYmpl2ocz/5O0dafF33Lv1P7EHOk=
 github.com/go-micro/microwire/v5 v5.0.0/go.mod h1:7epVJvlJl6jqn7bbJziAPtytAf9o7AqRJVs4X7dZoYI=
+github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
+github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/google/go-cmp v0.2.0/go.mod h1:oXzfMopK8JAjlY9xF4vHSVASa0yLyX7SntLO5aqRK0M=
 github.com/google/subcommands v1.0.1/go.mod h1:ZjhPrFU+Olkh9WazFPsl27BQ4UPiG37m3yTrtFlrHVk=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=

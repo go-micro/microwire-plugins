@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/broker/stan/v5
+module github.com/go-micro/microwire-plugins/v5/broker/stan
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/google/uuid v1.3.0
 	github.com/nats-io/stan.go v0.10.3
 )
@@ -18,7 +18,6 @@ require (
 	github.com/google/wire v0.5.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.1 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect

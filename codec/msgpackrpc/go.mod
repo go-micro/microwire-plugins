@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/codec/msgpackrpc/v5
+module github.com/go-micro/microwire-plugins/v5/codec/msgpackrpc
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/tinylib/msgp v1.1.6
 )
 

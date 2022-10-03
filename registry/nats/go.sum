@@ -7,6 +7,8 @@ github.com/fsnotify/fsnotify v1.5.4 h1:jRbGcIw6P2Meqdwuo0H1p6JVLbL5DHKAKlYndzMwV
 github.com/fsnotify/fsnotify v1.5.4/go.mod h1:OVB6XrOHzAwXMpEM7uPOzcehqUV2UqJxmVXmkdnm1bU=
 github.com/go-micro/microwire/v5 v5.0.0 h1:UqtFMvjaYmsL8wXOYmpl2ocz/5O0dafF33Lv1P7EHOk=
 github.com/go-micro/microwire/v5 v5.0.0/go.mod h1:7epVJvlJl6jqn7bbJziAPtytAf9o7AqRJVs4X7dZoYI=
+github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
+github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/golang/protobuf v1.4.0-rc.1/go.mod h1:ceaxUfeHdC40wWswd/P6IGgMaK3YpKi5j83Wpe3EHw8=
 github.com/golang/protobuf v1.4.0-rc.1.0.20200221234624-67d41d38c208/go.mod h1:xKAWHe0F5eneWXFV3EuXVDTCmh+JuBKY0li0aMyXATA=
 github.com/golang/protobuf v1.4.0-rc.2/go.mod h1:LlEzMj4AhA7rCAGe4KMBDvJI+AwstrUpVNzEA03Pprs=

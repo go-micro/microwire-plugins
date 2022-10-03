@@ -3,7 +3,7 @@ module github.com/go-micro/microwire-plugins/wrapper/breaker/gobreaker/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/sony/gobreaker v0.5.0
 )
 

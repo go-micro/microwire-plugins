@@ -48,6 +48,8 @@ github.com/go-git/go-git/v5 v5.4.2 h1:BXyZu9t0VkbiHtqrsvdq39UDhGJTl1h55VW6CSC4aY
 github.com/go-git/go-git/v5 v5.4.2/go.mod h1:gQ1kArt6d+n+BGd+/B/I74HwRTLhth2+zti4ihgckDc=
 github.com/go-micro/microwire/v5 v5.0.0 h1:UqtFMvjaYmsL8wXOYmpl2ocz/5O0dafF33Lv1P7EHOk=
 github.com/go-micro/microwire/v5 v5.0.0/go.mod h1:7epVJvlJl6jqn7bbJziAPtytAf9o7AqRJVs4X7dZoYI=
+github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
+github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/gobwas/httphead v0.1.0 h1:exrUm0f4YX0L7EBwZHuCF4GDp8aJfVeBrlLQrs6NqWU=
 github.com/gobwas/pool v0.2.1 h1:xfeeEhW7pwmX8nuLVlqbzVc7udMDrwetjEv+TZIz1og=
 github.com/gobwas/ws v1.1.0 h1:7RFti/xnNkMJnrK7D1yQ/iCIB5OrrY/54/H930kIbHA=

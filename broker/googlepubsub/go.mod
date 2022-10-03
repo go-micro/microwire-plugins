@@ -1,10 +1,10 @@
-module github.com/go-micro/microwire-plugins/broker/googlepubsub/v5
+module github.com/go-micro/microwire-plugins/v5/broker/googlepubsub
 
 go 1.18
 
 require (
 	cloud.google.com/go/pubsub v1.25.1
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/google/uuid v1.3.0
 	google.golang.org/api v0.98.0
 	google.golang.org/grpc v1.49.0
@@ -24,7 +24,6 @@ require (
 	github.com/googleapis/enterprise-certificate-proxy v0.2.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.5.1 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect

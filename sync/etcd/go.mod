@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/sync/etcd/v5
+module github.com/go-micro/microwire-plugins/v5/sync/etcd
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	go.etcd.io/etcd/client/v3 v3.5.5
 )
 

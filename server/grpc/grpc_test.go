@@ -16,10 +16,10 @@ import (
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/transport"
 
-	gcli "github.com/go-micro/microwire-plugins/client/grpc/v5"
-	gsrv "github.com/go-micro/microwire-plugins/server/grpc/v5"
+	gcli "github.com/go-micro/microwire-plugins/v5/client/grpc"
+	gsrv "github.com/go-micro/microwire-plugins/v5/server/grpc"
 	pb "github.com/go-micro/microwire-plugins/server/grpc/v5/proto"
-	tgrpc "github.com/go-micro/microwire-plugins/transport/grpc/v5"
+	tgrpc "github.com/go-micro/microwire-plugins/v5/transport/grpc"
 )
 
 // server is used to implement helloworld.GreeterServer.

@@ -1,9 +1,9 @@
-module github.com/go-micro/microwire-plugins/registry/consul/v5
+module github.com/go-micro/microwire-plugins/v5/registry/consul
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/hashicorp/consul/api v1.15.2
 	github.com/mitchellh/hashstructure v1.1.0
 )

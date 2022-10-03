@@ -5,7 +5,7 @@ go 1.18
 require (
 	cuelang.org/go v0.4.3
 	github.com/ghodss/yaml v1.0.0
-	github.com/go-micro/microwire/v5 v5.0.0
+	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/stretchr/testify v1.7.1
 )
 

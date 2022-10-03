@@ -7,7 +7,7 @@ The MQTT broker is useful for IoT based applications
 Drop in import
 
 ```go
-import _ "github.com/go-micro/microwire-plugins/broker/mqtt/v5"
+import _ "github.com/go-micro/microwire-plugins/v5/broker/mqtt"
 ```
 
 Flag on command line
@@ -21,7 +21,7 @@ Alternatively use directly
 ```go
 import (
 	"github.com/go-micro/microwire/v5"
-	"github.com/go-micro/microwire-plugins/broker/mqtt/v5"
+	"github.com/go-micro/microwire-plugins/v5/broker/mqtt"
 )
 
 
@@ -44,7 +44,7 @@ Example
 import (
     "github.com/micro/broker"
     "github.com/micro/broker/codec/noop"
-    "github.com/go-micro/microwire-plugins/broker/mqtt/v5"
+    "github.com/go-micro/microwire-plugins/v5/broker/mqtt"
 )
 
 b := mqtt.NewBroker(
