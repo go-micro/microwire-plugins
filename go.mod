@@ -1,3 +1,3 @@
-module github.com/go-micro/microwire-plugins/v5
+module github.com/go-micro/microwire-plugins
 
 go 1.18
