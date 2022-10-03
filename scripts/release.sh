@@ -7,19 +7,11 @@
 #                                                                                    #
 ######################################################################################
 
-# https://stackoverflow.com/a/8659330
 function increment_minor_version ()
 {
     declare -a part=( ${1//\./ } )
-    declare    new
-    declare -i carry=1
-
-    for (( CNTR=${#part[@]}-2; CNTR>=0; CNTR-=1 )); do
-        len=${#part[CNTR]}
-        new=$((part[CNTR]+carry))
-        [ ${#new} -gt $len ] && carry=1 || carry=0
-        [ $CNTR -gt 0 ] && part[CNTR]=${new: -len} || part[CNTR]=${new}
-    done
+    part[2]=0
+    part[1]=$((part[1] + 1))
     new="${part[*]}"
     echo -e "${new// /.}"
 }
@@ -27,15 +19,7 @@ function increment_minor_version ()
 function increment_patch_version ()
 {
     declare -a part=( ${1//\./ } )
-    declare    new
-    declare -i carry=1
-
-    for (( CNTR=${#part[@]}-1; CNTR>=0; CNTR-=1 )); do
-        len=${#part[CNTR]}
-        new=$((part[CNTR]+carry))
-        [ ${#new} -gt $len ] && carry=1 || carry=0
-        [ $CNTR -gt 0 ] && part[CNTR]=${new: -len} || part[CNTR]=${new}
-    done
+    part[2]=$((part[2] + 1))
     new="${part[*]}"
     echo -e "${new// /.}"
 }
@@ -60,21 +44,23 @@ function release() {
         exit 1
     fi
 
-    local last_tag_split=(${last_tag//\// })
+    declare -a last_tag_split=(${last_tag//\// })
     
     local v_version=${last_tag_split[-1]}
     local version=${v_version:1}
 
     git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*" | grep -q "^feat"
     if [[ "$?" == "0" ]]; then
-        local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]::${#last_tag_split[@]}-1}")/v$(increment_minor_version ${version})"
+        unset last_tag_split[-1]
+        local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]}")/v$(increment_minor_version ${version})"
         local new_tag=${tmp_new_tag:1}
     else
-        local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]::${#last_tag_split[@]}-1}")/v$(increment_patch_version ${version})"
+        unset last_tag_split[-1]
+        local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]}")/v$(increment_patch_version ${version})"
         local new_tag=${tmp_new_tag:1}
     fi
 
-    echo -e "# Run:\ngh release create "${pkg}/${new_tag}" --generate-notes --notes-start-tag ${last_tag}"
+    echo -e "# Run:\ngh release create "${new_tag}" --generate-notes --notes-start-tag ${last_tag}"
 }
 
 release "${1}"
