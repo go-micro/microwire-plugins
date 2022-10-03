@@ -48,14 +48,14 @@ function release() {
     
     local v_version=${last_tag_split[-1]}
     local version=${v_version:1}
+    # Remove the version from last_tag_split
+    unset last_tag_split[-1]
 
     git --no-pager log "${last_tag}..HEAD" --format="%s" "${pkg}/*" | grep -q "^feat"
     if [[ "$?" == "0" ]]; then
-        unset last_tag_split[-1]
         local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]}")/v$(increment_minor_version ${version})"
         local new_tag=${tmp_new_tag:1}
     else
-        unset last_tag_split[-1]
         local tmp_new_tag="$(printf "/%s" "${last_tag_split[@]}")/v$(increment_patch_version ${version})"
         local new_tag=${tmp_new_tag:1}
     fi
