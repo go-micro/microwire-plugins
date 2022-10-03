@@ -26,12 +26,9 @@ tasks:
     cmds:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go get -u ./...; popd' '_' '{}' \+
   test:
+    desc: Run "go test ./..." in all packages
     cmds:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' '{}' \+
-  workuse:
-    cmds:
-      - go work init . || exit 0
-      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'go work use `dirname $1`' '_' '{}' \+
   release:
     desc: "Release plugins that have changed it requires to be in a git repo with a clean tag, usage example: task release -- v5.0.13 v5.0.14"
     cmds:
