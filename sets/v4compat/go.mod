@@ -3,22 +3,21 @@ module github.com/go-micro/microwire-plugins/sets/v4compat/v5
 go 1.18
 
 require (
-	github.com/go-micro/microwire-plugins/broker/http/v5 v5.0.10
-	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.10
-	github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.0.10
-	github.com/go-micro/microwire-plugins/transport/http/v5 v5.0.10
+	github.com/go-micro/microwire-plugins/broker/http/v5 v5.0.11
+	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.11
+	github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.0.11
+	github.com/go-micro/microwire-plugins/transport/http/v5 v5.0.11
 )
 
 require (
 	github.com/bitly/go-simplejson v0.5.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
-	github.com/go-micro/microwire/v5 v5.0.0 // indirect
+	github.com/go-micro/microwire/v5 v5.0.1 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
