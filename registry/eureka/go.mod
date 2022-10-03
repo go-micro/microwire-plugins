@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/registry/eureka
+module github.com/go-micro/microwire-plugins/registry/eureka/v5
 
 go 1.18
 
@@ -20,7 +20,6 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/smartystreets/assertions v1.0.1 // indirect

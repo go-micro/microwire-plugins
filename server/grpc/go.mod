@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/server/grpc
+module github.com/go-micro/microwire-plugins/server/grpc/v5
 
 go 1.17
 

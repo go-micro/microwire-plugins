@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/events/nats
+module github.com/go-micro/microwire-plugins/events/nats/v5
 
 go 1.18
 

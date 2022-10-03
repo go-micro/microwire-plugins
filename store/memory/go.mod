@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/store/memory
+module github.com/go-micro/microwire-plugins/store/memory/v5
 
 go 1.18
 
@@ -21,6 +21,7 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
+	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b // indirect
 	golang.org/x/sync v0.0.0-20220929204114-8fcdb60fdcc0 // indirect

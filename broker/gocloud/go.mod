@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/gocloud
+module github.com/go-micro/microwire-plugins/broker/gocloud/v5
 
 go 1.18
 

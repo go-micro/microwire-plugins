@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/proxy/http
+module github.com/go-micro/microwire-plugins/proxy/http/v5
 
 go 1.18
 

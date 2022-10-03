@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/go-micro/microwire-plugins/registry/eureka/v5/mock"
-	"github.com/hudl/fargo"
 	"github.com/go-micro/microwire/v5/registry"
+	"github.com/hudl/fargo"
 )
 
 func TestRegistration(t *testing.T) {

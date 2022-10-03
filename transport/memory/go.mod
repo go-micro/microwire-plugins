@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/transport/memory
+module github.com/go-micro/microwire-plugins/transport/memory/v5
 
 go 1.18
 
@@ -11,7 +11,6 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b // indirect
 	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect

@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/client/mock
+module github.com/go-micro/microwire-plugins/client/mock/v5
 
 go 1.18
 

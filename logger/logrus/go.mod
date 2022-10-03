@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/logger/logrus
+module github.com/go-micro/microwire-plugins/logger/logrus/v5
 
 go 1.18
 

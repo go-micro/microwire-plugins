@@ -46,9 +46,9 @@ Import the plugins in a `plugins.go` file
 package main
 
 import (
-	_ "github.com/go-micro/microwire-plugins/v5/broker/rabbitmq"
-	_ "github.com/go-micro/microwire-plugins/v5/registry/kubernetes"
-	_ "github.com/go-micro/microwire-plugins/v5/transport/nats"
+	_ "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5
+	_ "github.com/go-micro/microwire-plugins/registry/kubernetes/v5
+	_ "github.com/go-micro/microwire-plugins/transport/nats/v5
 )
 ```
 
@@ -104,7 +104,7 @@ Import and set as options when creating a new service
 ```go
 import (
 	"github.com/go-micro/microwire/v5"
-	"github.com/go-micro/microwire-plugins/v5/registry/kubernetes"
+	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5
 )
 
 func main() {
@@ -131,9 +131,9 @@ Create file plugins.go
 package main
 
 import (
-	_ "github.com/go-micro/microwire-plugins/v5/broker/rabbitmq"
-	_ "github.com/go-micro/microwire-plugins/v5/registry/kubernetes"
-	_ "github.com/go-micro/microwire-plugins/v5/transport/nats"
+	_ "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5
+	_ "github.com/go-micro/microwire-plugins/registry/kubernetes/v5
+	_ "github.com/go-micro/microwire-plugins/transport/nats/v5
 )
 ```
 

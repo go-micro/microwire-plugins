@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/acme/certmagic
+module github.com/go-micro/microwire-plugins/acme/certmagic/v5
 
 go 1.18
 

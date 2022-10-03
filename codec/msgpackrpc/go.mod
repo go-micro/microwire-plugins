@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/codec/msgpackrpc
+module github.com/go-micro/microwire-plugins/codec/msgpackrpc/v5
 
 go 1.18
 

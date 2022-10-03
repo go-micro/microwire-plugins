@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/logger/zerolog
+module github.com/go-micro/microwire-plugins/logger/zerolog/v5
 
 go 1.18
 

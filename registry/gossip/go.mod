@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/registry/gossip
+module github.com/go-micro/microwire-plugins/registry/gossip/v5
 
 go 1.18
 
@@ -26,7 +26,7 @@ require (
 	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
-	github.com/kr/pretty v0.3.0 // indirect
+	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect

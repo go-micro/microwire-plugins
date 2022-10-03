@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/logger/windowseventlog
+module github.com/go-micro/microwire-plugins/logger/windowseventlog/v5
 
 go 1.18
 

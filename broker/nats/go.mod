@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/nats
+module github.com/go-micro/microwire-plugins/broker/nats/v5
 
 go 1.18
 

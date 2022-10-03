@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/codec/bsonrpc
+module github.com/go-micro/microwire-plugins/codec/bsonrpc/v5
 
 go 1.18
 

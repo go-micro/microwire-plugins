@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/redis
+module github.com/go-micro/microwire-plugins/broker/redis/v5
 
 go 1.18
 

@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/http
+module github.com/go-micro/microwire-plugins/broker/http/v5
 
 go 1.18
 

@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/proxy
+module github.com/go-micro/microwire-plugins/broker/proxy/v5
 
 go 1.18
 

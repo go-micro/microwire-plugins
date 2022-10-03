@@ -1,9 +1,8 @@
-module github.com/go-micro/microwire-plugins/v5/broker/grpc
+module github.com/go-micro/microwire-plugins/broker/grpc/v5
 
 go 1.18
 
 require (
-	github.com/go-micro/microwire-plugins/broker/grpc/v5 v5.0.0-20221003063456-1df7162bf96c
 	github.com/go-micro/microwire/v5 v5.0.1
 	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.3.0
@@ -13,6 +12,7 @@ require (
 
 require (
 	github.com/bitly/go-simplejson v0.5.0 // indirect
+	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect

@@ -14,7 +14,7 @@ Specify the server to your micro service
 ```go
 import (
         "github.com/go-micro/microwire/v5"
-        "github.com/go-micro/microwire-plugins/v5/server/grpc"
+        "github.com/go-micro/microwire-plugins/server/grpc/v5
 )
 
 func main() {

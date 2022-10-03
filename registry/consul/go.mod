@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/registry/consul
+module github.com/go-micro/microwire-plugins/registry/consul/v5
 
 go 1.18
 

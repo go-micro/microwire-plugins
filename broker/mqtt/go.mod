@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/mqtt
+module github.com/go-micro/microwire-plugins/broker/mqtt/v5
 
 go 1.18
 

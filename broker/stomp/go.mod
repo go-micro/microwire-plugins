@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/broker/stomp
+module github.com/go-micro/microwire-plugins/broker/stomp/v5
 
 go 1.18
 

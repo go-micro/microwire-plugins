@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/wrapper/service
+module github.com/go-micro/microwire-plugins/wrapper/service/v5
 
 go 1.18
 
@@ -10,7 +10,6 @@ require (
 	github.com/ProtonMail/go-crypto v0.0.0-20220930113650-c6815a8c17ad // indirect
 	github.com/acomagu/bufpipe v1.0.3 // indirect
 	github.com/bitly/go-simplejson v0.5.0 // indirect
-	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/cloudflare/circl v1.2.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/evanphx/json-patch/v5 v5.6.0 // indirect

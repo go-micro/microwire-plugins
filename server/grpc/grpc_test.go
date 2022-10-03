@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"
 
-	"github.com/go-micro/microwire/v5"
+	micro "github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire/v5/broker"
 	"github.com/go-micro/microwire/v5/client"
 	"github.com/go-micro/microwire/v5/errors"
@@ -16,10 +16,10 @@ import (
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/transport"
 
-	gcli "github.com/go-micro/microwire-plugins/v5/client/grpc"
-	gsrv "github.com/go-micro/microwire-plugins/v5/server/grpc"
 	pb "github.com/go-micro/microwire-plugins/server/grpc/v5/proto"
-	tgrpc "github.com/go-micro/microwire-plugins/v5/transport/grpc"
+	gcli "github.com/go-micro/microwire-plugins/client/grpc/v5
+	gsrv "github.com/go-micro/microwire-plugins/server/grpc/v5
+	tgrpc "github.com/go-micro/microwire-plugins/transport/grpc/v5
 )
 
 // server is used to implement helloworld.GreeterServer.
@@ -66,45 +66,45 @@ func (s *testServer) Call(ctx context.Context, req *pb.Request, rsp *pb.Response
 }
 
 /*
-func BenchmarkServer(b *testing.B) {
-	r := registry.NewMemoryRegistry()
-	br := broker.NewMemoryBroker()
-	tr := tgrpc.NewTransport()
-	s := gsrv.NewServer(
-		server.Broker(br),
-		server.Name("foo"),
-		server.Registry(r),
-		server.Transport(tr),
-	)
-	c := gcli.NewClient(
-		client.Registry(r),
-		client.Broker(br),
-		client.Transport(tr),
-	)
-	ctx := context.TODO()
+	func BenchmarkServer(b *testing.B) {
+		r := registry.NewMemoryRegistry()
+		br := broker.NewMemoryBroker()
+		tr := tgrpc.NewTransport()
+		s := gsrv.NewServer(
+			server.Broker(br),
+			server.Name("foo"),
+			server.Registry(r),
+			server.Transport(tr),
+		)
+		c := gcli.NewClient(
+			client.Registry(r),
+			client.Broker(br),
+			client.Transport(tr),
+		)
+		ctx := context.TODO()
 
-	h := &testServer{}
-	pb.RegisterTestHandler(s, h)
-	if err := s.Start(); err != nil {
-		b.Fatalf("failed to start: %v", err)
-	}
-
-	// check registration
-	services, err := r.GetService("foo")
-	if err != nil || len(services) == 0 {
-		b.Fatalf("failed to get service: %v # %d", err, len(services))
-	}
-
-	defer func() {
-		if err := s.Stop(); err != nil {
-			b.Fatalf("failed to stop: %v", err)
+		h := &testServer{}
+		pb.RegisterTestHandler(s, h)
+		if err := s.Start(); err != nil {
+			b.Fatalf("failed to start: %v", err)
 		}
-	}()
 
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
-		c.Call()
-	}
+		// check registration
+		services, err := r.GetService("foo")
+		if err != nil || len(services) == 0 {
+			b.Fatalf("failed to get service: %v # %d", err, len(services))
+		}
+
+		defer func() {
+			if err := s.Stop(); err != nil {
+				b.Fatalf("failed to stop: %v", err)
+			}
+		}()
+
+		b.ResetTimer()
+		for i := 0; i < b.N; i++ {
+			c.Call()
+		}
 
 }
 */

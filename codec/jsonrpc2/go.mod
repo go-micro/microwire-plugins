@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/codec/jsonrpc2
+module github.com/go-micro/microwire-plugins/codec/jsonrpc2/v5
 
 go 1.18
 

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	segmentio "github.com/go-micro/microwire-plugins/v5/broker/segmentio/v5"
+	segmentio "github.com/go-micro/microwire-plugins/broker/segmentio/v5"
 	"github.com/go-micro/microwire/v5/broker"
 )
 

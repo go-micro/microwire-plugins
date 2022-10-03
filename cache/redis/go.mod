@@ -1,4 +1,4 @@
-module github.com/go-micro/microwire-plugins/v5/cache/redis
+module github.com/go-micro/microwire-plugins/cache/redis/v5
 
 go 1.18
 
