@@ -5,8 +5,11 @@ go 1.19
 require (
 	github.com/go-micro/microwire-plugins/broker/nats/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.0.13
+	github.com/go-micro/microwire-plugins/config/source/nats/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/events/nats/v5 v5.0.13
+	github.com/go-micro/microwire-plugins/events/natsjs/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/registry/nats/v5 v5.0.13
+	github.com/go-micro/microwire-plugins/store/nats-js/v5 v5.0.13
 	github.com/go-micro/microwire-plugins/transport/nats/v5 v5.0.13
 )
 
@@ -19,6 +22,9 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/google/wire v0.5.0 // indirect
+	github.com/hashicorp/go-hclog v1.3.1 // indirect
+	github.com/hashicorp/go-msgpack v1.1.5 // indirect
+	github.com/hashicorp/raft v1.3.10 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/nats-io/nats.go v1.17.0 // indirect
@@ -28,9 +34,12 @@ require (
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/prometheus/procfs v0.8.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/stretchr/testify v1.7.2 // indirect
 	github.com/urfave/cli/v2 v2.17.1 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
+	go.etcd.io/bbolt v1.3.6 // indirect
 	golang.org/x/crypto v0.0.0-20220926161630-eccd6366d1be // indirect
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
 	golang.org/x/net v0.0.0-20221002022538-bcab6841153b // indirect
