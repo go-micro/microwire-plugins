@@ -1,5 +1,15 @@
 version: "3"
 
+vars:
+  GIT_TAG: 
+    sh: git tag --points-at HEAD
+  GIT_COMMIT:
+    sh: git rev-parse --short HEAD
+  GIT_DIRTY:
+    sh: git status -s
+  VERSION:
+    sh: if test "{{.GIT_DIRTY}}" != ""; then echo "{{.GIT_COMMIT}}-dirty"; elif test "{{.GIT_TAG}}" != ""; then echo "{{.GIT_TAG}}"; else echo "{{.GIT_COMMIT}}"; fi
+
 tasks:
   check:
     cmds:
@@ -20,3 +30,8 @@ tasks:
     cmds:
       - go work init . || exit 0
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'go work use `dirname $1`' '_' '{}' \+
+  releaseall:
+    cmds:
+      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'dir=$(dirname $1); pkg=${dir:2}; hub release create -m "${dir}/{{.GIT_TAG}}" "${dir}/{{.GIT_TAG}}"' '_' '{}' \+
+    preconditions:
+      - test "{{.GIT_TAG}}" = "{{.VERSION}}"
