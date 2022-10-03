@@ -10,15 +10,15 @@ tasks:
   tidy:
     desc: Run "go mod tidy -go=1.8" in all packages
     cmds:
-      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go mod tidy -go=1.18; popd' '_' '{}' \+
+      - find . -name 'go.mod' -exec /bin/bash -c 'pushd `dirname $1`; go mod tidy -go=1.18; popd' '_' {} \;
   update:
     desc: Run "go get -u ./..." in all packages
     cmds:
-      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go get -u ./...; popd' '_' '{}' \+
+      - find . -name 'go.mod' -exec /bin/bash -c 'pushd `dirname $1`; go get -u ./...; popd' '_' {} \;
   test:
     desc: Run "go test ./..." in all packages
     cmds:
-      - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' '{}' \+
+      - find . -name 'go.mod' -exec /bin/bash -c 'pushd `dirname $1`; go test ./...; popd' '_' {} \;
   workuse:
     desc: Add all plugins to go.work
     cmds:
@@ -35,3 +35,10 @@ tasks:
     cmds:
       - find . -name 'go.mod' -printf "%h\n" | sort -u | cut -c 3- | xargs -I {} ./scripts/release.sh {} | bash
       - git fetch
+  updatev0:
+    desc: "Update all v0 in all packages, usage: task updatev0 -- v0.0.5"
+    cmds:
+      - find . -name 'go.mod' -exec /bin/bash -c 'path=$(dirname $1); pushd $path; go get -u github.com/go-micro/microwire-plugins@{{.CLI_ARGS}}; popd;' '_' {} \;
+      - task: tidy
+    preconditions:
+      - test -n "{{.CLI_ARGS}}"

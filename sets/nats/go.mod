@@ -1,6 +1,6 @@
 module github.com/go-micro/microwire-plugins/sets/nats/v5
 
-go 1.19
+go 1.18
 
 require (
 	github.com/go-micro/microwire-plugins/broker/nats/v5 v5.0.13

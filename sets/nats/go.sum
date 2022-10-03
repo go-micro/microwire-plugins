@@ -33,8 +33,6 @@ github.com/go-micro/microwire-plugins/store/nats-js/v5 v5.0.13 h1:h3fVCjvTDp2cxA
 github.com/go-micro/microwire-plugins/store/nats-js/v5 v5.0.13/go.mod h1:z89tgQWtMkAm/zH3qSSxr+LZf6GEp4kdqXgR7eycE3M=
 github.com/go-micro/microwire-plugins/transport/nats/v5 v5.0.13 h1:3HpKSoYIYEOEi+cjI0Nu7a2oimk27MZ0C/t+8JAjntc=
 github.com/go-micro/microwire-plugins/transport/nats/v5 v5.0.13/go.mod h1:O2fCwM/ayGwdrbO3WIqfJ170XyVQHXX0vylFDJquENo=
-github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
-github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/go-micro/microwire/v5 v5.0.2 h1:7BUdPBLis7TLAi7FoMuPg6pE6VoKlhR8Ca3ePqOa2+s=
 github.com/go-micro/microwire/v5 v5.0.2/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/gogo/protobuf v1.3.2 h1:Ov1cvc58UF3b5XjBnZv7+opcTcQFZebYjWzi34vdm4Q=

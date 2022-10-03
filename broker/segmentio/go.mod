@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/go-micro/microwire-plugins/broker/kafka/v5 v5.0.11
+	github.com/go-micro/microwire-plugins/codec/json/v5 v5.0.0
 	github.com/go-micro/microwire-plugins/codec/segmentio/v5 v5.0.11
 	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/google/uuid v1.3.0

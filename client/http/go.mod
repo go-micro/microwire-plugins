@@ -3,6 +3,8 @@ module github.com/go-micro/microwire-plugins/client/http/v5
 go 1.18
 
 require (
+	github.com/go-micro/microwire-plugins/codec/jsonrpc/v5 v5.0.0
+	github.com/go-micro/microwire-plugins/codec/protorpc/v5 v5.0.0
 	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/golang/protobuf v1.5.2
 )

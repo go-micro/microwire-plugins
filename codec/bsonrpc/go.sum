@@ -1,6 +1,4 @@
 github.com/go-micro/go-bson v1.0.0 h1:HA0CYa9szLy8/LX1M/4Ye9HQvI4Gz1HxVIM5RWWo1T0=
 github.com/go-micro/go-bson v1.0.0/go.mod h1:p7wClOWTgO7XlpEE3VC8O4w94VQ0W+HeHrEp4xDwYVA=
-github.com/go-micro/microwire/v5 v5.0.1 h1:Q3r5ki9KKQ/BV/SY31HSTCLbZ95s8JuMzGMz4gkU2WA=
-github.com/go-micro/microwire/v5 v5.0.1/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=
 github.com/go-micro/microwire/v5 v5.0.2 h1:7BUdPBLis7TLAi7FoMuPg6pE6VoKlhR8Ca3ePqOa2+s=
 github.com/go-micro/microwire/v5 v5.0.2/go.mod h1:sC9ZnWglQSdCx41nbygbffO8Lz3Dm58SfV7C6+WkCMA=

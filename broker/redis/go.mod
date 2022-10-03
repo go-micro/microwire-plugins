@@ -3,6 +3,7 @@ module github.com/go-micro/microwire-plugins/broker/redis/v5
 go 1.18
 
 require (
+	github.com/go-micro/microwire-plugins/codec/json/v5 v5.0.0
 	github.com/go-micro/microwire/v5 v5.0.2
 	github.com/gomodule/redigo v1.8.9
 )
