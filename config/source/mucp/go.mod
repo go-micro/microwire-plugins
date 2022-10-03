@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/go-micro/microwire/v5 v5.0.0
 	github.com/golang/protobuf v1.5.2
+	go-micro.dev/v4 v4.9.0
 )
 
 require (
@@ -12,7 +13,6 @@ require (
 	github.com/ProtonMail/go-crypto v0.0.0-20220930113650-c6815a8c17ad // indirect
 	github.com/acomagu/bufpipe v1.0.3 // indirect
 	github.com/bitly/go-simplejson v0.5.0 // indirect
-	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/cloudflare/circl v1.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
