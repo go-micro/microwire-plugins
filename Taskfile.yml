@@ -37,7 +37,7 @@ tasks:
     desc: "Release plugins that have changed, usage example: task release -- v5.0.13 v5.0.14"
     cmds:
       - |-
-        for pkg in $(./scripts/release_changed.sh {{.CLI_ARGS}}); 
+        for pkg in $(./scripts/find_changed.sh {{.CLI_ARGS}}); 
           do hub release create -m "${pkg}/{{.GIT_TAG}}" "${pkg}/{{.GIT_TAG}}"; 
         done
     preconditions:
