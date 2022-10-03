@@ -18,5 +18,5 @@ tasks:
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'pushd `dirname $1`; git add go.mod go.sum; popd' '_' '{}' \+
   workuse:
     cmds:
-      - go work init .
+      - go work init . || exit 0
       - find . -name 'go.mod' -print0 | xargs -0 -I {} /bin/bash -c 'go work use `dirname $1`' '_' '{}' \+
