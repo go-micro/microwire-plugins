@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	rabbitmq "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5
+	rabbitmq "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5"
 	micro "github.com/go-micro/microwire/v5"
 	broker "github.com/go-micro/microwire/v5/broker"
 	server "github.com/go-micro/microwire/v5/server"
@@ -37,10 +37,14 @@ func TestDurable(t *testing.T) {
 
 	s := server.NewServer(server.Broker(b))
 
-	service := micro.NewService(
+	service, err := micro.NewService(
 		micro.Server(s),
 		micro.Broker(b),
 	)
+	if err != nil {
+		t.Fatal(err)
+	}
+
 	h := &Example{}
 	// Register a subscriber
 	micro.RegisterSubscriber(

@@ -14,11 +14,11 @@ Specify the server to your micro service
 ```go
 import (
         "github.com/go-micro/microwire/v5"
-        "github.com/go-micro/microwire-plugins/server/grpc/v5
+        "github.com/go-micro/microwire-plugins/server/grpc/v5"
 )
 
 func main() {
-        service := micro.NewService(
+        service, _ := micro.NewService(
                 // This needs to be first as it replaces the underlying server
                 // which causes any configuration set before it
                 // to be discarded

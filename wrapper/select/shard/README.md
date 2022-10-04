@@ -14,7 +14,7 @@ Pass in the wrapper when you create your service with the key you want to shard 
 ```
 wrapper := shard.NewClientWrapper("X-From-Session")
 
-service := micro.NewService(
+service, _ := micro.NewService(
 	micro.Name("foo"),
 	micro.WrapClient(wrapper),
 )

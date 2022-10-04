@@ -46,9 +46,9 @@ Import the plugins in a `plugins.go` file
 package main
 
 import (
-	_ "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5
-	_ "github.com/go-micro/microwire-plugins/registry/kubernetes/v5
-	_ "github.com/go-micro/microwire-plugins/transport/nats/v5
+	_ "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5"
+	_ "github.com/go-micro/microwire-plugins/registry/kubernetes/v5"
+	_ "github.com/go-micro/microwire-plugins/transport/nats/v5"
 )
 ```
 
@@ -59,13 +59,17 @@ package main
 
 import (
 	"github.com/go-micro/microwire/v5"
+	"github.com/go-micro/microwire/v5/logger"
 )
 
 func main() {
-	service := micro.NewService(
+	service, err := micro.NewService(
 		// Set service name
 		micro.Name("my.service"),
 	)
+	if err != nil {
+		logger.Fatal(err)
+	}
 
 	// Parse CLI flags
 	service.Init()
@@ -104,13 +108,13 @@ Import and set as options when creating a new service
 ```go
 import (
 	"github.com/go-micro/microwire/v5"
-	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5
+	"github.com/go-micro/microwire-plugins/registry/kubernetes/v5"
 )
 
 func main() {
 	registry := kubernetes.NewRegistry() //a default to using env vars for master API
 
-	service := micro.NewService(
+	service, _ := micro.NewService(
 		// Set service name
 		micro.Name("my.service"),
 		// Set service registry
@@ -131,9 +135,9 @@ Create file plugins.go
 package main
 
 import (
-	_ "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5
-	_ "github.com/go-micro/microwire-plugins/registry/kubernetes/v5
-	_ "github.com/go-micro/microwire-plugins/transport/nats/v5
+	_ "github.com/go-micro/microwire-plugins/broker/rabbitmq/v5"
+	_ "github.com/go-micro/microwire-plugins/registry/kubernetes/v5"
+	_ "github.com/go-micro/microwire-plugins/transport/nats/v5"
 )
 ```
 

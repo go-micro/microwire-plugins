@@ -10,7 +10,7 @@ import (
 	"net/http"
 
 	"github.com/micro/go-micro/server"
-	httpServer "github.com/go-micro/microwire-plugins/server/http/v5
+	httpServer "github.com/go-micro/microwire-plugins/server/http/v5"
 )
 
 func main() {
@@ -39,7 +39,7 @@ import (
 
 	"github.com/go-micro/microwire/v5"
 	"github.com/micro/go-micro/server"
-	httpServer "github.com/go-micro/microwire-plugins/server/http/v5
+	httpServer "github.com/go-micro/microwire-plugins/server/http/v5"
 )
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 
 	srv.Handle(hd)
 
-	service := micro.NewService(
+	service, _ := micro.NewService(
 		micro.Server(srv),
 	)
 	service.Init()

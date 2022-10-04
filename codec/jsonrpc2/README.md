@@ -23,7 +23,7 @@ func main() {
         server.Codec("application/json", jsonrpc2.NewCodec),
     )
 
-    service := micro.NewService(
+    service, _ := micro.NewService(
         micro.Client(client),
         micro.Server(server),
     )

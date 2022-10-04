@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-	service := micro.NewService(
+	service, _ := micro.NewService(
 		micro.Name("greeter"),
 		micro.Client(grpc.NewClient()),
 	)

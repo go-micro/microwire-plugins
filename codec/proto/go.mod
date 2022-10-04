@@ -8,4 +8,8 @@ require (
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c
 )
 
-require google.golang.org/protobuf v1.28.1 // indirect
+require (
+	github.com/google/go-cmp v0.5.9 // indirect
+	github.com/stretchr/testify v1.8.0 // indirect
+	google.golang.org/protobuf v1.28.1 // indirect
+)

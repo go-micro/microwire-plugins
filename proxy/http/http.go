@@ -212,7 +212,7 @@ func (p *Router) ServeRequest(ctx context.Context, req server.Request, rsp serve
 //	r.RegisterEndpoint("Hello.World", "/helloworld")
 //
 //	// Create your new service
-//	service := micro.NewService(
+//	service, _ := micro.NewService(
 //		micro.Name("greeter"),
 //		// Set the router
 //		http.WithRouter(r),

@@ -9,5 +9,6 @@ require (
 
 require (
 	github.com/google/uuid v1.3.0 // indirect
+	github.com/stretchr/testify v1.8.0 // indirect
 	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
 )

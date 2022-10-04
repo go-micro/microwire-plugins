@@ -19,7 +19,7 @@ An optional domain-name can be appended too.
 ```go
 selector := static.NewSelector()
 
-service := micro.NewService(
+service, _ := micro.NewService(
 	client.NewClient(client.Selector(selector))
 )
 ```

@@ -14,7 +14,7 @@ opts := []awsxray.Option{
 	awsxray.WithClient(xray.New(awsSession)),
 }
 
-service := micro.NewService(
+service, _ := micro.NewService(
 	micro.Name("go.micro.srv.greeter"),
 	micro.WrapCall(awsxray.NewCallWrapper(opts...)),
 	micro.WrapClient(awsxray.NewClientWrapper(opts...)),

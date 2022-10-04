@@ -5,7 +5,7 @@ OpenCensus wrappers propagate traces (spans) accross services.
 ## Usage
 
 ```go
-service := micro.NewService(
+service, _ := micro.NewService(
     micro.Name("go.micro.srv.greeter"),
     micro.WrapClient(opencensus.NewClientWrapper()),
     micro.WrapHandler(opencensus.NewHandlerWrapper()),

@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/go-micro/microwire/v5"
+	micro "github.com/go-micro/microwire/v5"
 	"github.com/go-micro/microwire/v5/client"
 	"github.com/go-micro/microwire/v5/registry"
 	"github.com/go-micro/microwire/v5/server"
@@ -68,7 +68,7 @@ func TestHTTPRouter(t *testing.T) {
 	wg.Add(1)
 
 	// new micro service
-	service := micro.NewService(
+	service, _ := micro.NewService(
 		micro.Context(ctx),
 		micro.Name("foobar"),
 		micro.Registry(registry.NewMemoryRegistry()),

@@ -9,7 +9,7 @@ Pass in the wrapper when you create your service
 ```
 wrapper := roundrobin.NewClientWrapper()
 
-service := micro.NewService(
+service, _ := micro.NewService(
 	micro.Name("foo"),
 	micro.WrapClient(wrapper),
 )

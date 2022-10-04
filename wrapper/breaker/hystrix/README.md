@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	service := micro.NewService(micro.WrapClient(hystrix.NewClientWrapper()))
+	service, _ := micro.NewService(micro.WrapClient(hystrix.NewClientWrapper()))
 	service.Init(micro.Name("test.srv"), micro.Address(":80"))
 	if err := service.Run(); err != nil {
 		panic(err)
@@ -29,7 +29,7 @@ import (
 )
 
 func main() {
-	service := micro.NewService(micro.WrapClient(hystrix.NewClientWrapper(hystrix.WithFilter(func(c context.Context, e error) error {
+	service, _ := micro.NewService(micro.WrapClient(hystrix.NewClientWrapper(hystrix.WithFilter(func(c context.Context, e error) error {
 			if e == ErrLetItPass {
 				return true 
 			}
@@ -69,7 +69,7 @@ import (
 
 func main() {
 	hystrix.ConfigureDefault(hystrix.CommandConfig{Timeout: 1000})
-	service := micro.NewService(micro.WrapClient(hystrix.NewClientWrapper()))
+	service, _ := micro.NewService(micro.WrapClient(hystrix.NewClientWrapper()))
 	service.Init(micro.Name("test.srv"), micro.Address(":80"))
 	if err := service.Run(); err != nil {
 		panic(err)

@@ -13,7 +13,7 @@ This handler will export two metrics to prometheus:
 When creating your service, add the wrapper like so.
 
 ```go
-    service := micro.NewService(
+    service, _ := micro.NewService(
         micro.Name("service name"),
     	micro.Version("latest"),
     	micro.WrapHandler(victoriametrics.NewHandlerWrapper()),
