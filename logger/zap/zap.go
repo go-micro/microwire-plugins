@@ -12,6 +12,10 @@ import (
 	"github.com/go-micro/microwire/v5/logger"
 )
 
+func init() {
+	_ = logger.Plugins.Add("zap", NewLogger)
+}
+
 type zaplog struct {
 	cfg  zap.Config
 	zap  *zap.Logger
@@ -163,7 +167,7 @@ func (l *zaplog) Options() logger.Options {
 }
 
 // New builds a new logger based on options
-func NewLogger(opts ...logger.Option) (logger.Logger, error) {
+func NewLogger(opts ...logger.Option) logger.Logger {
 	// Default options
 	options := logger.Options{
 		Level:           logger.InfoLevel,
@@ -175,10 +179,10 @@ func NewLogger(opts ...logger.Option) (logger.Logger, error) {
 
 	l := &zaplog{opts: options}
 	if err := l.Init(opts...); err != nil {
-		return nil, err
+		panic(err)
 	}
 
-	return l, nil
+	return l
 }
 
 func loggerToZapLevel(level logger.Level) zapcore.Level {
@@ -198,19 +202,19 @@ func loggerToZapLevel(level logger.Level) zapcore.Level {
 	}
 }
 
-func zapToLoggerLevel(level zapcore.Level) logger.Level {
-	switch level {
-	case zap.DebugLevel:
-		return logger.DebugLevel
-	case zap.InfoLevel:
-		return logger.InfoLevel
-	case zap.WarnLevel:
-		return logger.WarnLevel
-	case zap.ErrorLevel:
-		return logger.ErrorLevel
-	case zap.FatalLevel:
-		return logger.FatalLevel
-	default:
-		return logger.InfoLevel
-	}
-}
+// func zapToLoggerLevel(level zapcore.Level) logger.Level {
+// 	switch level {
+// 	case zap.DebugLevel:
+// 		return logger.DebugLevel
+// 	case zap.InfoLevel:
+// 		return logger.InfoLevel
+// 	case zap.WarnLevel:
+// 		return logger.WarnLevel
+// 	case zap.ErrorLevel:
+// 		return logger.ErrorLevel
+// 	case zap.FatalLevel:
+// 		return logger.FatalLevel
+// 	default:
+// 		return logger.InfoLevel
+// 	}
+// }

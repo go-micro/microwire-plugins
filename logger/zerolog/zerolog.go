@@ -14,6 +14,10 @@ import (
 	"github.com/go-micro/microwire/v5/logger"
 )
 
+func init() {
+	_ = logger.Plugins.Add("zerolog", NewLogger)
+}
+
 type Mode uint8
 
 const (

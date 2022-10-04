@@ -10,6 +10,10 @@ import (
 	"github.com/go-micro/microwire/v5/logger"
 )
 
+func init() {
+	_ = logger.Plugins.Add("logrus", NewLogger)
+}
+
 type entryLogger interface {
 	WithFields(fields logrus.Fields) *logrus.Entry
 	WithError(err error) *logrus.Entry

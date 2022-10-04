@@ -9,6 +9,10 @@ var (
 	lvl = log.InfoLevel
 )
 
+func init() {
+	_ = logger.Plugins.Add("apex", NewLogger)
+}
+
 type logger struct {
 	apexLog.Interface
 	opts Options
