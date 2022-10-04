@@ -4,9 +4,9 @@ import (
 	"bytes"
 
 	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
 	"github.com/oxtoacart/bpool"
 	"github.com/segmentio/encoding/json"
+	"google.golang.org/protobuf/proto"
 )
 
 var jsonpbMarshaler = &jsonpb.Marshaler{}

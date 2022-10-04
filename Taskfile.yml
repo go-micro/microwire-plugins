@@ -1,5 +1,7 @@
 version: "3"
 
+dotenv: [".env"]
+
 tasks:
   check:
     cmds:
@@ -42,3 +44,25 @@ tasks:
       - task: tidy
     preconditions:
       - test -n "{{.CLI_ARGS}}"
+
+  builder:
+    desc: Run something in the builder container for example "task builder -- go get -u ./..."
+    cmds:
+      - podman run --rm
+        -v "{{.PWD}}:/code"
+        -v "{{.GO_VOLUME_PATH}}:/go:rw"
+        {{.DOCKER_ORG_JO_MICRO}}/builder:latest {{.CLI_ARGS}}
+    vars:
+      GO_VOLUME_PATH:
+        sh: podman volume inspect microwire_go --format "{{"{{"}}.Mountpoint{{"}}"}}"
+    preconditions:
+      - test -n "{{.CLI_ARGS}}"
+
+  protoc:
+    desc: Generate protobuf go files
+    cmds:
+      - podman volume inspect microwire_go 1>/dev/null 2>&1 || podman volume create microwire_go
+      - task: builder
+        vars:
+          CLI_ARGS: /scripts/protoc_gen.sh
+      - find . -name '*.pb.micro.go' -exec sed -i 's#go-micro.dev/v4#github.com/go-micro/microwire/v5#g' {} \;

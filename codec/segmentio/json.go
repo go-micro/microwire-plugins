@@ -6,8 +6,8 @@ import (
 	"io"
 
 	"github.com/go-micro/microwire/v5/codec"
-	"github.com/golang/protobuf/proto"
 	segjson "github.com/segmentio/encoding/json"
+	"google.golang.org/protobuf/proto"
 )
 
 func init() {

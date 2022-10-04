@@ -12,6 +12,7 @@ github.com/go-micro/microwire-plugins/broker/http/v5 v5.1.2/go.mod h1:a46+/0RVRX
 github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.1 h1:ZNQMs1CxFKqB0W+/ehQDwL63JqDaJDHbB/k3q0biYaM=
 github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.1/go.mod h1:U5xj1opEddwe2w8e1/tzZoC4oY0nda4hsJ5MlV4POx0=
 github.com/go-micro/microwire-plugins/codec/json/v5 v5.1.0 h1:w6huqKNVtiqxJfZCdrXpO00ZUSoD8CmnORkdWs2aMeg=
+github.com/go-micro/microwire-plugins/codec/json/v5 v5.1.0/go.mod h1:0E//umTrafUWmyC17fzwO8S73lnEHg8JixuhHzB+hCs=
 github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.1 h1:uZ2X3kWux6LqjWKX+Eoqct6wwL3MfrkxcdvHNVfC7Yg=
 github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.1/go.mod h1:1JxidVewniwbAjCsSqT4gBcoGXZ0NLfeqFDi3O+5Jzs=
 github.com/go-micro/microwire-plugins/transport/http/v5 v5.1.1 h1:idM9JweABpYxQMewkc87JqD95zRq9ugCb4AVqWW8ojY=

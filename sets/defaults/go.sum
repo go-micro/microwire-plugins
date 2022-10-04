@@ -8,12 +8,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fsnotify/fsnotify v1.5.4 h1:jRbGcIw6P2Meqdwuo0H1p6JVLbL5DHKAKlYndzMwVZI=
 github.com/fsnotify/fsnotify v1.5.4/go.mod h1:OVB6XrOHzAwXMpEM7uPOzcehqUV2UqJxmVXmkdnm1bU=
-github.com/go-micro/microwire-plugins/broker/http/v5 v5.1.1 h1:+1Cz4ZhwutaMHrP8zTb5ulCuCgMsqAsnwOgx6QWHJJw=
-github.com/go-micro/microwire-plugins/broker/http/v5 v5.1.1/go.mod h1:qP24cxK1eKchN+vc9ekRz3PKVSQBbzVhuboTRk7Lcrw=
 github.com/go-micro/microwire-plugins/broker/http/v5 v5.1.2 h1:wd1Hp4i7RlCKNh//gujPOQuvwMQeCEKZ38y+GJ8vCy4=
 github.com/go-micro/microwire-plugins/broker/http/v5 v5.1.2/go.mod h1:a46+/0RVRXlD1LdoKpJhjqgCqWyhLaWcVc7MaRz/PXk=
-github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.0 h1:q1URPLEls0/bEn5QZgVuYbkMpEeV19vLiphgFpgDVC0=
-github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.0/go.mod h1:U5xj1opEddwe2w8e1/tzZoC4oY0nda4hsJ5MlV4POx0=
 github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.1 h1:ZNQMs1CxFKqB0W+/ehQDwL63JqDaJDHbB/k3q0biYaM=
 github.com/go-micro/microwire-plugins/cli/urfave/v5 v5.1.1/go.mod h1:U5xj1opEddwe2w8e1/tzZoC4oY0nda4hsJ5MlV4POx0=
 github.com/go-micro/microwire-plugins/codec/grpc/v5 v5.0.0 h1:cGURFJ+3Oi8BRAxAsfAAL1oIf56SxkE8S7nH0vmQsXc=
@@ -28,12 +24,8 @@ github.com/go-micro/microwire-plugins/codec/protorpc/v5 v5.0.0 h1:LhjVn8nmae++lD
 github.com/go-micro/microwire-plugins/codec/protorpc/v5 v5.0.0/go.mod h1:odmxQwdNfsDbAHjleupvOR2/p9fSA1DxEgAhBwtgvZI=
 github.com/go-micro/microwire-plugins/codec/text/v5 v5.0.0 h1:jP21e3xadIMz8BpxUZr6EqtdKAJ+9e83iP2jTI2xp1c=
 github.com/go-micro/microwire-plugins/codec/text/v5 v5.0.0/go.mod h1:C0TjDTRgSEDJK2/mCEuy8DFo79bPTEX85YxhMgdtr3U=
-github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.0 h1:Rk56d5DckWVW74i1jQSH10/L47fcIuQiUpx2Xq2zWAQ=
-github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.0/go.mod h1:1JxidVewniwbAjCsSqT4gBcoGXZ0NLfeqFDi3O+5Jzs=
 github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.1 h1:uZ2X3kWux6LqjWKX+Eoqct6wwL3MfrkxcdvHNVfC7Yg=
 github.com/go-micro/microwire-plugins/registry/mdns/v5 v5.1.1/go.mod h1:1JxidVewniwbAjCsSqT4gBcoGXZ0NLfeqFDi3O+5Jzs=
-github.com/go-micro/microwire-plugins/transport/http/v5 v5.1.0 h1:a6ETEh87UFSzo83PKQA05vN6qYFI8p4ilZOiyp6vnD0=
-github.com/go-micro/microwire-plugins/transport/http/v5 v5.1.0/go.mod h1:38uF/ZNEu6g+DYNnBkpB46ZDAd1uJK1Nik2IsfP66ZI=
 github.com/go-micro/microwire-plugins/transport/http/v5 v5.1.1 h1:idM9JweABpYxQMewkc87JqD95zRq9ugCb4AVqWW8ojY=
 github.com/go-micro/microwire-plugins/transport/http/v5 v5.1.1/go.mod h1:38uF/ZNEu6g+DYNnBkpB46ZDAd1uJK1Nik2IsfP66ZI=
 github.com/go-micro/microwire/v5 v5.0.2 h1:7BUdPBLis7TLAi7FoMuPg6pE6VoKlhR8Ca3ePqOa2+s=

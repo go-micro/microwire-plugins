@@ -1,7 +1,5 @@
 github.com/asim/go-awsxray v0.0.0-20161209120537-0d8a60b6e205 h1:g1jjsCHdDIjIKNQN7RyDoOmzFgQ8PqKOsaF4o9gZTAQ=
 github.com/asim/go-awsxray v0.0.0-20161209120537-0d8a60b6e205/go.mod h1:frVmN4PtXUuL1EbZn0uL4PHSTKNKFnbMpBIhngqMuNQ=
-github.com/aws/aws-sdk-go v1.44.109 h1:+Na5JPeS0kiEHoBp5Umcuuf+IDqXqD0lXnM920E31YI=
-github.com/aws/aws-sdk-go v1.44.109/go.mod h1:y4AeaBuwd2Lk+GepC1E9v0qOiTws0MIWAX4oIKwKHZo=
 github.com/aws/aws-sdk-go v1.44.110 h1:unno3l2FYQo6p0wYCp9gUk8YNzhOxqSktM0Y1vukl9k=
 github.com/aws/aws-sdk-go v1.44.110/go.mod h1:y4AeaBuwd2Lk+GepC1E9v0qOiTws0MIWAX4oIKwKHZo=
 github.com/bitly/go-simplejson v0.5.0 h1:6IH+V8/tVMab511d5bn4M7EwGXZf9Hj6i2xSwkNEM+Y=

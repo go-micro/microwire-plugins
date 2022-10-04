@@ -6,8 +6,8 @@ import (
 	"io"
 
 	"github.com/go-micro/microwire/v5/codec"
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/encoding/protojson"
+	"google.golang.org/protobuf/proto"
 )
 
 func init() {
@@ -29,7 +29,7 @@ func (c *Codec) ReadBody(b interface{}) error {
 		return nil
 	}
 	if pb, ok := b.(proto.Message); ok {
-		return jsonpb.UnmarshalNext(c.Decoder, pb)
+		return unmarshalNext(c.Decoder, pb)
 	}
 	return c.Decoder.Decode(b)
 }
@@ -55,4 +55,13 @@ func NewCodec(c io.ReadWriteCloser) codec.Codec {
 		Decoder: json.NewDecoder(c),
 		Encoder: json.NewEncoder(c),
 	}
+}
+
+// https://github.com/golang/protobuf/issues/1231#issuecomment-715664100
+func unmarshalNext(d *json.Decoder, m proto.Message) error {
+	var b json.RawMessage
+	if err := d.Decode(&b); err != nil {
+		return err
+	}
+	return protojson.Unmarshal(b, m)
 }

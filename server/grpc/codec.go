@@ -9,10 +9,10 @@ import (
 	"github.com/go-micro/microwire/v5/codec"
 	"github.com/go-micro/microwire/v5/codec/bytes"
 	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/grpc/metadata"
+	"google.golang.org/protobuf/proto"
 )
 
 type jsonCodec struct{}

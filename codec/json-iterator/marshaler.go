@@ -4,9 +4,9 @@ import (
 	"bytes"
 
 	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/oxtoacart/bpool"
+	"google.golang.org/protobuf/proto"
 )
 
 var (

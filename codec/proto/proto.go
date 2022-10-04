@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/go-micro/microwire/v5/codec"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 )
 
 func init() {

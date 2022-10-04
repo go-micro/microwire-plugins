@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option go_package = "./proto";
+
 service Source {
 	rpc Read(ReadRequest) returns (ReadResponse) {};
 	rpc Watch(WatchRequest) returns (stream WatchResponse) {};

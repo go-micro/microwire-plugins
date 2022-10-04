@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package gossip;
 
+option go_package = "./proto";
+
 // Update is the message broadcast
 message Update {
 	// time to live for entry

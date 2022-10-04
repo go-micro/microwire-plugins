@@ -22,7 +22,7 @@ import (
 	"github.com/go-micro/microwire/v5/server"
 	"github.com/go-micro/microwire/v5/util/addr"
 	"github.com/go-micro/microwire/v5/util/backoff"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	mgrpc "github.com/go-micro/microwire/v5/util/grpc"
 	mnet "github.com/go-micro/microwire/v5/util/net"
