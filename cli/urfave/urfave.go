@@ -13,50 +13,74 @@ func init() {
 }
 
 type FlagCLI struct {
-	stringFlags map[string]*cli.StringFlag
-	intFlags    map[string]*cli.IntFlag
-	options     *mCli.Options
-	ctx         *cli.Context
+	flags            map[string]*mCli.Flag
+	stringFlags      map[string]*cli.StringFlag
+	intFlags         map[string]*cli.IntFlag
+	stringSliceFlags map[string]*cli.StringSliceFlag
+	stringSliceDests map[string]*cli.StringSlice
+	options          *mCli.Options
+	ctx              *cli.Context
 }
 
 func NewCLI(opts ...mCli.Option) mCli.Cli {
 	return &FlagCLI{
-		stringFlags: make(map[string]*cli.StringFlag),
-		intFlags:    make(map[string]*cli.IntFlag),
-		options:     mCli.NewCLIOptions(),
+		flags:            make(map[string]*mCli.Flag),
+		stringFlags:      make(map[string]*cli.StringFlag),
+		intFlags:         make(map[string]*cli.IntFlag),
+		stringSliceFlags: make(map[string]*cli.StringSliceFlag),
+		stringSliceDests: make(map[string]*cli.StringSlice),
+		options:          mCli.NewCLIOptions(),
 	}
 }
 
 func (c *FlagCLI) Add(opts ...mCli.FlagOption) error {
-	options, err := mCli.NewFlag(opts...)
+	flag, err := mCli.NewFlag(opts...)
 	if err != nil {
 		return err
 	}
 
-	switch options.FlagType {
+	switch flag.FlagType {
 	case mCli.FlagTypeInt:
 		f := &cli.IntFlag{
-			Name:        options.Name,
-			Usage:       options.Usage,
-			Value:       options.DefaultInt,
-			EnvVars:     options.EnvVars,
-			Destination: options.DestinationInt,
+			Name:        flag.Name,
+			Usage:       flag.Usage,
+			Value:       flag.DefaultInt,
+			EnvVars:     flag.EnvVars,
+			Destination: &flag.ValueInt,
 		}
-		c.intFlags[options.Name] = f
+		c.intFlags[flag.Name] = f
 	case mCli.FlagTypeString:
 		f := &cli.StringFlag{
-			Name:        options.Name,
-			Usage:       options.Usage,
-			Value:       options.DefaultString,
-			EnvVars:     options.EnvVars,
-			Destination: options.DestinationString,
+			Name:        flag.Name,
+			Usage:       flag.Usage,
+			Value:       flag.DefaultString,
+			EnvVars:     flag.EnvVars,
+			Destination: &flag.ValueString,
 		}
-		c.stringFlags[options.Name] = f
+		c.stringFlags[flag.Name] = f
+	case mCli.FlagTypeStringSlice:
+		dest := cli.NewStringSlice()
+		c.stringSliceDests[flag.Name] = dest
+		f := &cli.StringSliceFlag{
+			Name:        flag.Name,
+			Usage:       flag.Usage,
+			Value:       cli.NewStringSlice(flag.DefaultStringSlice...),
+			EnvVars:     flag.EnvVars,
+			Destination: dest,
+		}
+		c.stringSliceFlags[flag.Name] = f
 	default:
 		return errors.InternalServerError("USER_FLAG_WITHOUT_A_DEFAULTOPTION", "found a flag without a default option")
 	}
 
+	c.flags[flag.Name] = flag
+
 	return nil
+}
+
+func (c *FlagCLI) Get(name string) (*mCli.Flag, bool) {
+	flag, ok := c.flags[name]
+	return flag, ok
 }
 
 func (c *FlagCLI) Parse(args []string, opts ...mCli.Option) error {
@@ -65,12 +89,16 @@ func (c *FlagCLI) Parse(args []string, opts ...mCli.Option) error {
 	}
 
 	i := 0
-	flags := make([]cli.Flag, len(c.stringFlags)+len(c.intFlags))
+	flags := make([]cli.Flag, len(c.stringFlags)+len(c.intFlags)+len(c.stringSliceFlags))
 	for _, f := range c.stringFlags {
 		flags[i] = f
 		i += 1
 	}
 	for _, f := range c.intFlags {
+		flags[i] = f
+		i += 1
+	}
+	for _, f := range c.stringSliceFlags {
 		flags[i] = f
 		i += 1
 	}
@@ -99,6 +127,10 @@ func (c *FlagCLI) Parse(args []string, opts ...mCli.Option) error {
 
 	if c.ctx == nil {
 		os.Exit(0)
+	}
+
+	for n, f := range c.stringSliceDests {
+		mCli.UpdateFlagValue(c.flags[n], f.Get())
 	}
 
 	return nil

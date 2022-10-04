@@ -28,14 +28,11 @@ func TestParse(t *testing.T) {
 		cli.CliUsage("Test Usage"),
 	)
 
-	var destString string
-	var destInt int
 	err := myCli.Add(
 		cli.Name(FlagString),
 		cli.Default("micro!1!1"),
 		cli.EnvVars("STRINGFLAG"),
 		cli.Usage("string flag usage"),
-		cli.Destination(&destString),
 	)
 	expect(t, err, nil)
 
@@ -43,7 +40,6 @@ func TestParse(t *testing.T) {
 		cli.Name(FlagInt),
 		cli.EnvVars("INTFLAG"),
 		cli.Usage("int flag usage"),
-		cli.Destination(&destInt),
 	)
 	expect(t, err, nil)
 
@@ -58,6 +54,8 @@ func TestParse(t *testing.T) {
 	)
 	expect(t, err, nil)
 
-	expect(t, destString, "demo")
-	expect(t, destInt, 42)
+	flagString, _ := myCli.Get(FlagString)
+	expect(t, cli.FlagValue(flagString, ""), "demo")
+	flagInt, _ := myCli.Get(FlagInt)
+	expect(t, cli.FlagValue(flagInt, 0), 42)
 }
